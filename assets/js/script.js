@@ -59,3 +59,19 @@ window.addEventListener('resize', () => {
     toggleMenu(); // Ferme le menu si l'écran est large
   }
 });
+
+// Fonction pour changer la langue
+function switchLanguage() {
+  // Si la langue actuelle est français (fr)
+  if (document.documentElement.lang === 'fr') {
+      document.documentElement.lang = 'en';  // Changer la langue en anglais
+      document.getElementById('switchLang').textContent = 'FR';  // Mettre à jour le texte du bouton
+      // Redirection vers la version anglaise de la page
+      window.location.href = '/pages/en/index.html';  // Rediriger vers l'URL anglaise
+  } else {
+      document.documentElement.lang = 'fr';  // Changer la langue en français
+      document.getElementById('switchLang').textContent = 'EN';  // Mettre à jour le texte du bouton
+      // Redirection vers la version française de la page
+      window.location.href = '/pages/fr/index.html';  // Rediriger vers l'URL française
+  }
+}

@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Deborah Clerckx, Back-End Web Developer.">
+    <meta name="description" content="Portfolio de Deborah Clerckx, Développeuse Web Back-End.">
     <meta id="ConnectiveDocSignExtentionInstalled" name="ConnectiveDocSignExtentionInstalled" data-extension-version="1.0.5">
-    <title>Deborah Clerckx - Back-End Web Developer</title>
+    <title>Deborah Clerckx - Développeuse Web Back-End</title>
     <link rel="icon" href="/assets/img/favicon/favicon-16x16.png" type="image/png"></head>
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script defer src="./assets/js/script.js"></script>
+    <script defer src="../../assets/js/script.js"></script>
   </head>
 
   <body class="bg-background" cz-shortcut-listen="true">
@@ -25,7 +25,7 @@
       <nav class="container max-w-[2500px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-4">
         <div class="flex justify-between items-center">
           <div class="flex items-center gap-2">
-            <a href="./index.html" class="text-primary font-bold text-xl active">CKX</a>
+            <a href="../fr/index.html" class="text-primary font-bold text-xl active">CKX</a>
           </div>
 
           <!-- Mobile menu button -->
@@ -37,13 +37,13 @@
 
           <!-- Desktop navigation -->
           <div class="hidden md:flex gap-6">
-            <a href="./index.html" id="homeLink"  class="text-primary hover:text-accent font-light transition-colors duration-200">Home</a>
-            <a href="#about" class="text-primary hover:text-accent font-light transition-colors duration-200">About</a>
-            <a href="#projects" class="text-primary hover:text-accent font-light transition-colors duration-200">Projects</a>
-            <a href="#skills" class="text-primary hover:text-accent font-light transition-colors duration-200">Skills</a>
-            <a href="#career" class="text-primary hover:text-accent font-light transition-colors duration-200">Career</a>
+            <a href="../fr/index.html" id="homeLink"  class="text-primary hover:text-accent font-light transition-colors duration-200">Accueil</a>
+            <a href="#a-propos" class="text-primary hover:text-accent font-light transition-colors duration-200">À propos</a>
+            <a href="#projets" class="text-primary hover:text-accent font-light transition-colors duration-200">Projets</a>
+            <a href="#competences" class="text-primary hover:text-accent font-light transition-colors duration-200">Compétences</a>
+            <a href="#carriere" class="text-primary hover:text-accent font-light transition-colors duration-200">Carrière</a>
             <a href="#contact" class="text-primary hover:text-accent font-light transition-colors duration-200">Contact</a>
-            <button id="switchLang" onclick="switchLanguage()" class="text-accent font-bold">FR 🍟</button>
+            <button id="switchLang" onclick="switchLanguage()" class="text-accent font-bold">EN 💂</button>
           </div>
         </div>
 
@@ -51,13 +51,13 @@
         <div id="mobileMenu" class="md:hidden">
           <div class="mobile-menu-container fixed inset-x-0 top-[72px] h-[calc(100vh-72px)] bg-background/95 backdrop-blur-lg -translate-y-full transition-transform duration-300 ease-in-out flex flex-col items-center justify-start pt-12">
             <nav class="flex flex-col items-center gap-8">
-              <a href="./index.html" class="mobile-link text-primary hover:text-accent font-light transition-colors duration-200">Home</a>
-              <a href="#about" class="mobile-link text-primary hover:text-accent font-light transition-colors duration-200">About</a>
-              <a href="#past-lives" class="mobile-link text-primary hover:text-accent font-light transition-colors duration-200">Projects</a>
-              <a href="#passions" class="mobile-link text-primary hover:text-accent font-light transition-colors durati-200">Skills</a>
-              <a href="#career" class="mobile-link text-primary hover:text-accent font-light transition-colors duration-200">Career</a>
-              <a href="#contact" class="mobile-link text-primary hover:text-accent font-light transition-colors duration-200">Contact</a>
-              <button id="switchLang" onclick="switchLanguage()" class="text-accent font-bold">FR 🍟</button>
+              <a href="../fr/index.html" id="homeLink"  class="text-primary hover:text-accent font-light transition-colors duration-200">Accueil</a>
+              <a href="#a-propos" class="text-primary hover:text-accent font-light transition-colors duration-200">À propos</a>
+              <a href="#projets" class="text-primary hover:text-accent font-light transition-colors duration-200">Projets</a>
+              <a href="#competences" class="text-primary hover:text-accent font-light transition-colors duration-200">Compétences</a>
+              <a href="#carriere" class="text-primary hover:text-accent font-light transition-colors duration-200">Carrière</a>
+              <a href="#contact" class="text-primary hover:text-accent font-light transition-colors duration-200">Contact</a>
+              <button id="switchLang" onclick="switchLanguage()" class="text-accent font-bold">EN 💂</button>
             </nav>
           </div>
         </div>
@@ -65,7 +65,7 @@
     </header>
 
     <main>
-      <section id="home" class="min-h-screen flex items-center justify-center">
+      <section id="accueil" class="min-h-screen flex items-center justify-center">
         <div class="max-w-4xl mx-auto text-center space-y-6">
           <div class="flex flex-col justify-center items-center gap-4 pt-24">
             <h1 class="text-3xl md:text-4xl font-semibold">
@@ -73,17 +73,17 @@
             </h1>
 
             <p class="text-4xl md:text-5xl font-bold tracking-wide mt-2 text-accent cap">
-              Back-End Web Developer
+              Développeuse Web Back-End
             </p>
 
             <p class="max-w-2xl mx-auto text-lg text-gray-700 leading-relaxed">
-              Development is much more than coding. <span class="font-bold">It's about building bridges between technology and the people who need it</span>.
+              Développer, c'est bien plus coder. <span class="font-bold">C'est créer des liens entre la technologie et celles et ceux qui en ont besoin</span>.
             </p>
           </div>
           
           <div class="flex justify-center items-center gap-8 pt-8">
             <a href="#contact" class="contact-submit-btn">
-              Let's work together
+              Travaillons ensemble
             </a>
           </div>
       
@@ -104,7 +104,7 @@
           <!-- END Social media -->
 
           <div class="flex justify-center items-center gap-8 pt-8">
-            <a href="#about">
+            <a href="#a-propos">
               <i class="text-3xl fa-solid fa-angles-down text-accent"></i>
             </a>
           </div>
@@ -112,27 +112,27 @@
       </section>
 
       <!-- Section About me -->
-      <section id="about" class="pt-32 pb-32 bg-gray-50 py-16 px-4">
+      <section id="a-propos" class="pt-32 pb-32 bg-gray-50 py-16 px-4">
         <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-primary mb-6 sm:mb-8 md:mb-10 lg:mb-12">
-          What I have to offer
+          Ce que j'ai à offrir
         </h2>
 
         <div class="flex flex-col md:flex-row justify-center gap-10">
           <div class="max-w-xl">
             <p class="text-lg text-gray-700 leading-relaxed mb-3">
-              <span class="font-bold">Coding comes naturally to me</span> — I genuinely love it. What drives me? Solving problems, making the engine run smoothly behind the scenes, and watching projects come to life with clean, solid code.
+              <span class="font-bold">Coder, c'est dans ma nature</span> — Je suis passionnée par ça. Ce qui me motive ? Résoudre des défis, faire tourner la machine en douceur dans l'ombre, et voir les projets prendre vie grâce à un code propre et efficace.
             </p>
-
+            
             <p class="text-lg text-gray-700 leading-relaxed mb-3">
-              <span class="font-bold">I'm a true team player</span>. Whether it's helping a teammate squash a bug or brainstorming a better system design, I'm in. For me, delivering real value to users is a top priority — no compromises there.
+              <span class="font-bold">Une véritable coéquipiere</span>. Que ce soit pour aider à résoudre un bug ou brainstormer pour améliorer un design, je suis toujours là. Pour moi, offrir une réelle valeur aux utilisateurs est non négociable.
             </p>
-
+            
             <p class="text-lg text-gray-700 leading-relaxed mb-3">
-              <span class="font-bold">I code with purpose: clarity, performance, and accessibility are always on my radar</span>. I'm especially committed to building tools and platforms that are inclusive and usable for everyone, and it's a path I'm excited to dig deeper into.
+              <span class="font-bold">Je code avec un objectif : clarté, performance et accessibilité sont toujours au programme</span>. J'ai à cœur de créer des outils et des plateformes accessibles à toustes, et je suis continue de creuser encore plus dans cette voie.
             </p>
-
+            
             <p class="text-lg text-gray-700 leading-relaxed">
-              <span class="font-bold">So, who am I?</span> A back-end developer with passion, energy, and a good dose of good vibes — ready to move projects forward with purpose and joy.
+              <span class="font-bold">Alors, qui suis-je ?</span> Une développeuse back-end passionnée, dynamique et toujours prête à avancer avec une dose d'énergie et de bonne humeur.
             </p>
           </div>
         
@@ -141,16 +141,17 @@
         
           <div class="max-w-xl">
             <p class="text-lg text-gray-700 leading-relaxed mb-3">
-              <span class="font-bold">Looking for someone who'll blend right in and bring energy to your team?</span><br />
-              I've got exactly what you need ...<br><span class="font-bold text-accent">And I might even save you some money 💸💸💸 !</span>
+              <span class="font-bold">Vous cherchez quelqu'un qui s'intègre parfaitement et apporte de l'énergie à votre équipe ?</span><br/>
+              J'ai exactement ce qu'il vous faut…<br/>
+              <span class="font-bold text-accent">Et je pourrais même vous faire économiser de l'argent 💸💸💸 !</span>
             </p>
 
             <p class="pl-5 text-lg text-gray-700 leading-relaxed mb-3">
-              <span class="font-bold">Internship availability:</span> May 5th to June 27th, 2025
+              <span class="font-bold">Disponibilité pour un stage :</span> du 5 mai au 27 juin 2025
             </p>
 
             <p class="pl-5 text-lg text-gray-700 leading-relaxed">
-              <span class="font-bold">Eligible for support programs:</span><br />
+              <span class="font-bold">Éligible aux programmes de soutien :</span><br/>
             </p>
 
             <ul class="list-disc pl-12 text-text-secondary text-sm sm:text-base mb-3 sm:mb-4 md:mb-6">
@@ -186,16 +187,16 @@
             </ul>
 
             <p class="text-lg text-gray-700 leading-relaxed">
-              ✨ <span class="font-bold">What's in it for you?</span><br />
-              A motivated junior back-end developer who loves teamwork, handles challenges with a smile, and codes with purpose.<br><span class="font-bold">Let's build something amazing — together!</span>
+              ✨ <span class="font-bold">Qu'est-ce que ça vous apporte ?</span><br/>
+              Un développeur junior back-end motivé, qui adore le travail d’équipe, relève les défis avec le sourire, et code avec un objectif.<br/><span class="font-bold">Créons quelque chose de génial — ensemble !</span>
             </p>
           </div>
         </div>
         
         <div class="max-w-2xl mx-auto text-center space-y-6">
           <div class="flex flex-col justify-center items-center gap-4 pt-12">
-            <a href="../en/past-lives.html" class="contact-submit-btn">
-              Learn more about me
+            <a href="../../pages/fr/vies-avant.html" class="contact-submit-btn">
+              En savoir plus sur moi
             </a>
           </div>
         </div>
@@ -203,17 +204,17 @@
       <!-- END Section About me -->
 
       <!-- Section Projects -->
-      <section id="projects" class="min-h-screen flex items-center bg-background-alt pt-24 py-16">
+      <section id="projets" class="min-h-screen flex items-center bg-background-alt pt-24 py-16">
         <div class="container max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
           <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-primary mb-6 sm:mb-8 md:mb-10 lg:mb-12">
-            What I have done so far
+            Ce que j'ai fait jusqu'à présent
           </h2>
 
           <div class="flex justify-center">
             <div class="grid grid-cols-1 min-[1072px]:grid-cols-2 xl:grid-cols-3 gap-8 sm:gap-10 md:gap-12 lg:gap-14 justify-items-center">
               <div class="bg-surface/30 backdrop-blur-sm rounded-lg overflow-hidden border border-black/15 flex flex-col min-h-[420px] sm:min-h-[450px] md:min-h-[480px] w-full max-w-[500px]">
                 <div class="relative h-52 sm:h-60 md:h-48 lg:h-56">
-                  <img src="./assets/img/numbercruncherextension.png" alt="Projet Number Cruncer extension" class="absolute inset-0 w-full h-full object-cover">
+                  <img src="../../assets/img/expensetracker.png" alt="Projet Number Cruncer Extension" class="absolute inset-0 w-full h-full object-cover">
                 </div>
 
                 <div class="p-3 sm:p-4 md:p-5 lg:p-6 flex flex-col flex-1">
@@ -221,7 +222,7 @@
                     <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-primary mb-2 sm:mb-3 md:mb-4">Expense Tracker</h3>
                     
                     <p class="text-text-secondary text-sm sm:text-base mb-3 sm:mb-4 md:mb-6">
-                      I wanted to create a simple and effective expense tracker that would allow me to keep track of my expenses and income in a clear and organized way.
+                      Je voulais créer un outil de suivi des dépenses simple et efficace qui me permettrait de suivre mes dépenses et mes revenus de manière claire et organisée.
                     </p>
                     
                     <div class="flex flex-wrap gap-1.5 sm:gap-2 mb-3 sm:mb-4 md:mb-6">
@@ -235,11 +236,11 @@
 
                   <div class="flex gap-2 sm:gap-3 md:gap-4">
                     <a href="https://github.com/belynnn/CKX__ExpenseTracker_CSharp" target="_blank" class="flex-1 bg-black/5 backdrop-blur-sm text-primary px-3 sm:px-4 md:px-6 py-2 rounded text-xs sm:text-sm md:text-base border border-black/10 transition-all duration-300 hover:bg-white/20 hover:border-[#00cc55]/50 hover:text-[#00cc55] hover:-translate-y-0.5 text-center">
-                      <i class="fa-brands fa-github mr-2"></i>See the GitHub
+                      <i class="fa-brands fa-github mr-2"></i>Voir via GitHub
                     </a>
 
                     <p class="cursor-not-allowed flex-1 bg-black/20 backdrop-blur-sm text-primary px-3 sm:px-4 md:px-6 py-2 rounded text-xs sm:text-sm md:text-base border border-black/10 text-center">
-                      <i class="fa-regular fa-eye mr-2"></i>No Demo
+                      <i class="fa-regular fa-eye mr-2"></i>Pas de démo
                     </p>
                   </div>
                 </div>
@@ -247,7 +248,7 @@
 
               <div class="bg-surface/30 backdrop-blur-sm rounded-lg overflow-hidden border border-black/15 flex flex-col min-h-[420px] sm:min-h-[450px] md:min-h-[480px] w-full max-w-[500px]">
                 <div class="relative h-52 sm:h-60 md:h-48 lg:h-56">
-                  <img src="./assets/img/insectopedia.png" alt="Projet Insectopedia" class="absolute inset-0 w-full h-full object-cover">
+                  <img src="../../assets/img/insectopedia.png" alt="Projet Insectopedia" class="absolute inset-0 w-full h-full object-cover">
                 </div>
 
                 <div class="p-3 sm:p-4 md:p-5 lg:p-6 flex flex-col flex-1">
@@ -255,7 +256,7 @@
                     <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-primary mb-2 sm:mb-3 md:mb-4">Insectopedia</h3>
                     
                     <p class="text-text-secondary text-sm sm:text-base mb-3 sm:mb-4 md:mb-6">
-                      Insectopedia is a prototype website designed to encourage people to get out and discover the world of insects, using a tracking management system with observation sheets.
+                      Insectopedia est un prototype de site web conçu pour encourager les gens à sortir et à découvrir le monde des insectes, en utilisant un système de gestion de suivi avec des fiches d'observation.
                     </p>
                     
                     <div class="flex flex-wrap gap-1.5 sm:gap-2 mb-3 sm:mb-4 md:mb-6">
@@ -272,11 +273,11 @@
 
                   <div class="flex gap-2 sm:gap-3 md:gap-4">
                     <a href="https://github.com/belynnn/I3_WAD_PHP__final_project_insectopedia" target="_blank" class="flex-1 bg-black/5 backdrop-blur-sm text-primary px-3 sm:px-4 md:px-6 py-2 rounded text-xs sm:text-sm md:text-base border border-black/10 transition-all duration-300 hover:bg-white/20 hover:border-[#00cc55]/50 hover:text-[#00cc55] hover:-translate-y-0.5 text-center">
-                      <i class="fa-brands fa-github mr-2"></i>See the GitHub
+                      <i class="fa-brands fa-github mr-2"></i>Voir via GitHub
                     </a>
 
                     <a href="http://wad14.interface3.be/accueil" target="_blank" class="flex-1 bg-black/5 backdrop-blur-sm text-primary px-3 sm:px-4 md:px-6 py-2 rounded text-xs sm:text-sm md:text-base border border-black/10 transition-all duration-300 hover:bg-white/20 hover:border-[#00cc55]/50 hover:text-[#00cc55] hover:-translate-y-0.5 text-center">
-                      <i class="fa-regular fa-eye mr-2"></i>See the Demo
+                      <i class="fa-regular fa-eye mr-2"></i>Voir la démo
                     </a>
                   </div>
                 </div>
@@ -284,20 +285,30 @@
 
               <div class="bg-surface/30 backdrop-blur-sm rounded-lg overflow-hidden border border-black/15 flex flex-col min-h-[420px] sm:min-h-[450px] md:min-h-[480px] w-full max-w-[500px]">
                 <div class="relative h-52 sm:h-60 md:h-48 lg:h-56">
-                  <img src="./assets/img/greenierplease.png" alt="Projet Insectopedia" class="absolute inset-0 w-full h-full object-cover">
+                  <img src="../../assets/img/greenierplease.png" alt="Projet Insectopedia" class="absolute inset-0 w-full h-full object-cover">
                 </div>
                 <div class="p-3 sm:p-4 md:p-5 lg:p-6 flex flex-col flex-1">
                   <div class="flex-1">
                     <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-primary mb-2 sm:mb-3 md:mb-4">Greenier, Please</h3>
                     
                     <p class="text-text-secondary text-sm sm:text-base mb-3 sm:mb-4 md:mb-6">
-                      "Greenier, Please" project, carried out during the 3-day Hackathon 2024, organised by the Interface3 training center in Brussels. With the help of<br/>
+                      Projet « Greenier, Please », réalisé pendant les 3 jours du Hackathon 2024, organisé par le centre de formation Interface3 à Bruxelles. Avec l'aide de :<br/>
                       <ul class="list-disc pl-6 text-text-secondary text-sm sm:text-base mb-3 sm:mb-4 md:mb-6">
-                        <li><strong>Front-End Developers:</strong> Sounia Mhalla Dit Aounallah & Bénédicte Lagasse</li>
-                        <li><strong>Game Developers:</strong> Luna, Gweny Dos Santos & Alexandra Medina</li>
-                        <li><strong>UI/UX Developer:</strong> Audrey & Wissal</li>
-                        <li><strong>Admin Sys & Network:</strong> Inès Troye & Anissa</li>
-                        <li><strong>Project Manager, Git Referent, Emotional Support, Thinking Plastic Duck & Backend Developer:</strong> Me</li>
+                        <li>
+                          <strong>Développeuses Front-End :</strong> Sounia Mhalla Dit Aounallah & Bénédicte Lagasse
+                        </li>
+                        <li>
+                          <strong>Développeur·euses Unity/JavaScript :</strong> Luna, Gweny Dos Santos & Alexandra Medina
+                        </li>
+                        <li>
+                          <strong>Développeuses UI/UX:</strong> Audrey & Wissal
+                        </li>
+                        <li>
+                          <strong>Adminastrices Sys & Réseau:</strong> Inès Troye & Anissa
+                        </li>
+                        <li>
+                          <strong>Cheffe de projet, Référente Git , Support émotionnel, Canard en Plastique de réflexion & Développeuse Back-end :</strong> Me
+                        </li>
                       </ul>
                     </p>
 
@@ -316,11 +327,11 @@
 
                   <div class="flex gap-2 sm:gap-3 md:gap-4">
                     <a href="https://github.com/belynnn/test-hackathon-bero" target="_blank" class="flex-1 bg-black/5 backdrop-blur-sm text-primary px-3 sm:px-4 md:px-6 py-2 rounded text-xs sm:text-sm md:text-base border border-black/10 transition-all duration-300 hover:bg-white/20 hover:border-[#00cc55]/50 hover:text-[#00cc55] hover:-translate-y-0.5 text-center">
-                      <i class="fa-brands fa-github mr-2"></i>See the GitHub
+                      <i class="fa-brands fa-github mr-2"></i>Voir via GitHub
                     </a>
 
                     <p class="cursor-not-allowed flex-1 bg-black/20 backdrop-blur-sm text-primary px-3 sm:px-4 md:px-6 py-2 rounded text-xs sm:text-sm md:text-base border border-black/10 text-center">
-                      <i class="fa-regular fa-eye mr-2"></i>No Demo
+                      <i class="fa-regular fa-eye mr-2"></i>Pas de démo
                     </p>
                   </div>
                 </div>
@@ -328,16 +339,16 @@
 
               <div class="bg-surface/30 backdrop-blur-sm rounded-lg overflow-hidden border border-black/15 flex flex-col min-h-[420px] sm:min-h-[450px] md:min-h-[480px] w-full max-w-[500px]">
                 <div class="relative h-52 sm:h-60 md:h-48 lg:h-56">
-                  <img src="./assets/img/numbercruncherextension.png" alt="Projet Number Cruncer extension" class="absolute inset-0 w-full h-full object-cover">
+                  <img src="../../assets/img/numbercruncherextension.png" alt="Projet Number Cruncer extension" class="absolute inset-0 w-full h-full object-cover">
                 </div>
                 <div class="p-3 sm:p-4 md:p-5 lg:p-6 flex flex-col flex-1">
                   <div class="flex-1">
                     <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-primary mb-2 sm:mb-3 md:mb-4">Number Cruncher Extension</h3>
                     
-                    <p class="text-text-secondary text-sm sm:text-base mb-3 sm:mb-4 md:mb-6">Still in development</p>
+                    <p class="text-text-secondary text-sm sm:text-base mb-3 sm:mb-4 md:mb-6">En cours de développement</p>
                     
                     <p class="text-text-secondary text-sm sm:text-base mb-3 sm:mb-4 md:mb-6">
-                      I often need a calculator, so I came up with the idea of creating a Chrome extension that would allow me to do calculations directly in the browser, without having to open a new tab or window.
+                      Comme j'ai souvent besoin d'une calculatrice, j'ai eu l'idée de créer une extension Chrome qui me permettrait de faire des calculs directement dans le navigateur, sans avoir à ouvrir un nouvel onglet ou une nouvelle fenêtre.
                     </p>
                     
                     <div class="flex flex-wrap gap-1.5 sm:gap-2 mb-3 sm:mb-4 md:mb-6">
@@ -350,11 +361,11 @@
 
                   <div class="flex gap-2 sm:gap-3 md:gap-4">
                     <a href="https://github.com/belynnn/CKX__NumberCruncherExtension_JS" target="_blank" class="flex-1 bg-black/5 backdrop-blur-sm text-primary px-3 sm:px-4 md:px-6 py-2 rounded text-xs sm:text-sm md:text-base border border-black/10 transition-all duration-300 hover:bg-white/20 hover:border-[#00cc55]/50 hover:text-[#00cc55] hover:-translate-y-0.5 text-center">
-                      <i class="fa-brands fa-github mr-2"></i>See the GitHub
+                      <i class="fa-brands fa-github mr-2"></i>Voir via GitHub
                     </a>
 
                     <a href="https://belynnn.github.io/CKX__NumberCruncherExtension_JS/" target="_blank" class="flex-1 bg-black/5 backdrop-blur-sm text-primary px-3 sm:px-4 md:px-6 py-2 rounded text-xs sm:text-sm md:text-base border border-black/10 transition-all duration-300 hover:bg-white/20 hover:border-[#00cc55]/50 hover:text-[#00cc55] hover:-translate-y-0.5 text-center">
-                      <i class="fa-regular fa-eye mr-2"></i>See the Demo
+                      <i class="fa-regular fa-eye mr-2"></i>Voir la démo
                     </a>
                   </div>
                 </div>
@@ -362,17 +373,17 @@
 
               <div class="bg-surface/30 backdrop-blur-sm rounded-lg overflow-hidden border border-black/15 flex flex-col min-h-[420px] sm:min-h-[450px] md:min-h-[480px] w-full max-w-[500px]">
                 <div class="relative h-52 sm:h-60 md:h-48 lg:h-56">
-                  <img src="./assets/img/todolistextension.png" alt="Projet Number Cruncer extension" class="absolute inset-0 w-full h-full object-cover">
+                  <img src="../../assets/img/todolistextension.png" alt="Projet Number Cruncer extension" class="absolute inset-0 w-full h-full object-cover">
                 </div>
 
                 <div class="p-3 sm:p-4 md:p-5 lg:p-6 flex flex-col flex-1">
                   <div class="flex-1">
                     <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-primary mb-2 sm:mb-3 md:mb-4">To Do List Extension</h3>
                     
-                    <p class="text-text-secondary text-sm sm:text-base mb-3 sm:mb-4 md:mb-6">Still in development</p>
+                    <p class="text-text-secondary text-sm sm:text-base mb-3 sm:mb-4 md:mb-6">En cours de développement</p>
                     
                     <p class="text-text-secondary text-sm sm:text-base mb-3 sm:mb-4 md:mb-6">
-                      As with the calculator extension, I like to have a place where I can make a quick note of what I need to do when I'm out and about, so I don't have to keep several tabs open or save links that I don't really need to store anywhere.
+                      Comme pour l'extension « calculatrice », j'aime disposer d'un endroit où je peux noter rapidement ce que je dois faire lorsque je suis en déplacement, afin de ne pas avoir à garder plusieurs onglets ouverts ou à enregistrer des liens que je n'ai pas vraiment besoin de conserver.
                     </p>
                     
                     <div class="flex flex-wrap gap-1.5 sm:gap-2 mb-3 sm:mb-4 md:mb-6">
@@ -385,11 +396,11 @@
 
                   <div class="flex gap-2 sm:gap-3 md:gap-4">
                     <a href="https://github.com/belynnn/CKX__ToDoListExtension" target="_blank" class="flex-1 bg-black/5 backdrop-blur-sm text-primary px-3 sm:px-4 md:px-6 py-2 rounded text-xs sm:text-sm md:text-base border border-black/10 transition-all duration-300 hover:bg-white/20 hover:border-[#00cc55]/50 hover:text-[#00cc55] hover:-translate-y-0.5 text-center">
-                      <i class="fa-brands fa-github mr-2"></i>See the GitHub
+                      <i class="fa-brands fa-github mr-2"></i>Voir via GitHub
                     </a>
 
                     <a href="https://belynnn.github.io/CKX__ToDoListExtension/" target="_blank" class="flex-1 bg-black/5 backdrop-blur-sm text-primary px-3 sm:px-4 md:px-6 py-2 rounded text-xs sm:text-sm md:text-base border border-black/10 transition-all duration-300 hover:bg-white/20 hover:border-[#00cc55]/50 hover:text-[#00cc55] hover:-translate-y-0.5 text-center">
-                      <i class="fa-regular fa-eye mr-2"></i>See the Demo
+                      <i class="fa-regular fa-eye mr-2"></i>Voir la démo
                     </a>
                   </div>
                 </div>
@@ -397,18 +408,18 @@
 
               <div class="bg-surface/30 backdrop-blur-sm rounded-lg overflow-hidden border border-black/15 flex flex-col min-h-[420px] sm:min-h-[450px] md:min-h-[480px] w-full max-w-[500px]">
                 <div class="relative h-52 sm:h-60 md:h-48 lg:h-56">
-                  <img src="./assets/img/akcp-site.png" alt="Projet Insectopedia" class="absolute inset-0 w-full h-full object-cover">
+                  <img src="../../assets/img/akcp-site.png" alt="Projet Insectopedia" class="absolute inset-0 w-full h-full object-cover">
                 </div>
                 
                 <div class="p-3 sm:p-4 md:p-5 lg:p-6 flex flex-col flex-1">
                   <div class="flex-1">
                     <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-primary mb-2 sm:mb-3 md:mb-4">Anne Karin Court-Payen</h3>
                     
-                    <p class="text-text-secondary text-sm sm:text-base mb-3 sm:mb-4 md:mb-6">Ongoing development</p>
+                    <p class="text-text-secondary text-sm sm:text-base mb-3 sm:mb-4 md:mb-6">Développement continu</p>
                     
                     <p class="text-text-secondary text-sm sm:text-base mb-3 sm:mb-4 md:mb-6">
-                      Showcase site created for a French painter to present her services, timetables and various courses/workshops/stages. This project required me to continually find creative solutions despite the technical constraints, as the artist absolutely wanted the site to reflect her Photoshop models.
-                      Also, I'm not a frontend developer, I'm just helping.
+                      Site vitrine réalisé pour une artiste peintre française afin de présenter ses services, ses horaires et ses différents cours/ateliers/stages. Ce projet m'a demandé de trouver continuellement des solutions créatives malgré les contraintes techniques, car l'artiste voulait absolument que le site soit à l'image de ses modèles Photoshop.
+                      <br/>De plus, je ne suis pas un développeuse frontend, je ne fais qu'aider.
                     </p>
 
                     <div class="flex flex-wrap gap-1.5 sm:gap-2 mb-3 sm:mb-4 md:mb-6">
@@ -421,28 +432,28 @@
 
                   <div class="flex gap-2 sm:gap-3 md:gap-4">
                     <p class="cursor-not-allowed flex-1 bg-black/20 backdrop-blur-sm text-primary px-3 sm:px-4 md:px-6 py-2 rounded text-xs sm:text-sm md:text-base border border-black/10 text-center">
-                      <i class="fa-brands fa-github mr-2"></i>Private GitHub
+                      <i class="fa-brands fa-github mr-2"></i>GitHub privé
                     </p>
 
                     <a href="http://cours.ateliersaintraphael.com/" target="_blank" class="flex-1 bg-black/5 backdrop-blur-sm text-primary px-3 sm:px-4 md:px-6 py-2 rounded text-xs sm:text-sm md:text-base border border-black/10 transition-all duration-300 hover:bg-white/20 hover:border-[#00cc55]/50 hover:text-[#00cc55] hover:-translate-y-0.5 text-center">
-                      <i class="fa-regular fa-eye mr-2"></i>See the Website
+                      <i class="fa-regular fa-eye mr-2"></i>Voir le site
                     </a>
                   </div>
                 </div>
               </div>
               <div class="bg-surface/30 backdrop-blur-sm rounded-lg overflow-hidden border border-black/15 flex flex-col min-h-[420px] sm:min-h-[450px] md:min-h-[480px] w-full max-w-[500px]">
                 <div class="relative h-52 sm:h-60 md:h-48 lg:h-56">
-                  <img src="./assets/img/cbcn-site.png" alt="Projet Keyboard" class="absolute inset-0 w-full h-full object-cover">
+                  <img src="../../assets/img/cbcn-site.png" alt="Projet Keyboard" class="absolute inset-0 w-full h-full object-cover">
                 </div>
                 
                 <div class="p-3 sm:p-4 md:p-5 lg:p-6 flex flex-col flex-1">
                   <div class="flex-1">
                     <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-primary mb-2 sm:mb-3 md:mb-4">Keyboard</h3>
                     
-                    <p class="text-text-secondary text-sm sm:text-base mb-3 sm:mb-4 md:mb-6">Development on pause</p>
+                    <p class="text-text-secondary text-sm sm:text-base mb-3 sm:mb-4 md:mb-6">Développement en pause</p>
                     
                     <p class="text-text-secondary text-sm sm:text-base mb-3 sm:mb-4 md:mb-6">
-                      This project was commissioned by a digital consultant who wanted a small web application, with no specific design, to teach older learners how to use a keyboard.
+                      Ce projet a été commandé par un consultant numérique qui souhaitait une petite application web, sans conception spécifique, pour apprendre aux apprenants plus âgés à utiliser un clavier.
                     </p>
                     
                     <div class="flex flex-wrap gap-1.5 sm:gap-2 mb-3 sm:mb-4 md:mb-6">
@@ -455,28 +466,30 @@
 
                   <div class="flex gap-2 sm:gap-3 md:gap-4">
                     <a href="https://github.com/belynnn/simple_app_to_write_with_a_keyboard" target="_blank" class="flex-1 bg-black/5 backdrop-blur-sm text-primary px-3 sm:px-4 md:px-6 py-2 rounded text-xs sm:text-sm md:text-base border border-black/10 transition-all duration-300 hover:bg-white/20 hover:border-[#00cc55]/50 hover:text-[#00cc55] hover:-translate-y-0.5 text-center">
-                      <i class="fa-brands fa-github mr-2"></i>See the GitHub
+                      <i class="fa-brands fa-github mr-2"></i>Voir via GitHub
                     </a>
 
                     <a href="https://belynnn.github.io/simple_app_to_write_with_a_keyboard/" target="_blank" class="flex-1 bg-black/5 backdrop-blur-sm text-primary px-3 sm:px-4 md:px-6 py-2 rounded text-xs sm:text-sm md:text-base border border-black/10 transition-all duration-300 hover:bg-white/20 hover:border-[#00cc55]/50 hover:text-[#00cc55] hover:-translate-y-0.5 text-center">
-                      <i class="fa-regular fa-eye mr-2"></i>See the Demo
+                      <i class="fa-regular fa-eye mr-2"></i>Voir la démo
                     </a>
                   </div>
                 </div>
               </div>
               <div class="bg-surface/30 backdrop-blur-sm rounded-lg overflow-hidden border border-black/15 flex flex-col min-h-[420px] sm:min-h-[450px] md:min-h-[480px] w-full max-w-[500px]">
                 <div class="relative h-52 sm:h-60 md:h-48 lg:h-56">
-                  <img src="./assets/img/sanctusrp.webp" alt="Projet SanctusRP" class="absolute inset-0 w-full h-full object-cover">
+                  <img src="../../assets/img/sanctusrp.webp" alt="Projet SanctusRP" class="absolute inset-0 w-full h-full object-cover">
                 </div>
                 <div class="p-3 sm:p-4 md:p-5 lg:p-6 flex flex-col flex-1">
                   <div class="flex-1">
                     <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-primary mb-2 sm:mb-3 md:mb-4">SanctusRP</h3>
+
+                    <p class="text-text-secondary text-sm sm:text-base mb-3 sm:mb-4 md:mb-6">Serveur fermé</p>
                     
                     <p class="text-text-secondary text-sm sm:text-base mb-3 sm:mb-4 md:mb-6">
-                      Personal project that I developed over 1 year, with the help of my partner. We hosted the server using OVH services, and she took care of server maintenance.
-                      <br>I mainly worked on all the open-source scripts that I modified/created according to the needs of the players.
-                      <br>The scripts ranged from buying clothes in shops directly in-game, to managing sprites on the game map, to ordering in restaurants.
-                      <br>There were also menus linked to specific keys for polices & doctors professions, to facilitate access to different tools.
+                      Projet personnel que j'ai développé sur 1 an, avec l'aide de ma compagne. Nous avons hébergé le serveur en utilisant les services d'OVH, et elle s'est occupée de la maintenance du serveur.
+                      <br/>J'ai principalement travaillé sur tous les scripts open-source que j'ai modifiés/créés en fonction des besoins des joueurs.
+                      <br/>Les scripts allaient de l'achat de vêtements dans les boutiques directement dans le jeu, à la gestion des sprites sur la carte du jeu, en passant par la commande dans les restaurants.
+                      <br/>Il y avait aussi des menus liés à des touches spécifiques pour les professions de policier et de médecin, afin de faciliter l'accès à différents outils.
                     </p>
 
                     <div class="flex flex-wrap gap-1.5 sm:gap-2 mb-3 sm:mb-4 md:mb-6">
@@ -493,11 +506,11 @@
 
                   <div class="flex gap-2 sm:gap-3 md:gap-4">
                     <p class="cursor-not-allowed flex-1 bg-black/20 backdrop-blur-sm text-primary px-3 sm:px-4 md:px-6 py-2 rounded text-xs sm:text-sm md:text-base border border-black/10 text-center">
-                      <i class="fa-brands fa-github mr-2"></i>No GitHub
+                      <i class="fa-brands fa-github mr-2"></i>Pas de GitHub
                     </p>
 
                     <p class="cursor-not-allowed flex-1 bg-black/20 backdrop-blur-sm text-primary px-3 sm:px-4 md:px-6 py-2 rounded text-xs sm:text-sm md:text-base border border-black/10 text-center">
-                      <i class="fa-regular fa-eye mr-2"></i>No Demo
+                      <i class="fa-regular fa-eye mr-2"></i>Pas de démo
                     </p>
                   </div>
                 </div>
@@ -509,10 +522,10 @@
       <!-- END Section Projects -->
 
       <!-- Section Skills -->
-      <section id="skills" class="min-h-screen flex items-center justify-center bg-background py-16 pt-24">
+      <section id="competences" class="min-h-screen flex items-center justify-center bg-background py-16 pt-24">
         <div class="container max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
           <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-primary mb-16">
-            What I use to build my projects
+            Ce que j'aime utiliser pour construire mes projets
           </h2>
 
           <div class="max-w-[1800px] mx-auto">
@@ -520,20 +533,20 @@
               <div class="w-full lg:w-1/2 space-y-8 mx-auto">
                 <div class="bg-surface/30 backdrop-blur-sm rounded-xl border border-primary/10 p-6">
                   <h3 class="text-xl font-bold text-primary mb-4 flex items-center gap-3">
-                    <span class="text-accent">About my skills</span>
+                    <span class="text-accent">À propos de mes compétences</span>
                   </h3>
 
                   <p class="text-text-secondary leading-relaxed">
-                    Passionate about back-end development, I'm comfortable coding in <span class="text-primary font-medium">PHP</span> and <span class="text-primary font-medium">C#</span>, with a strong interest in frameworks like <span class="text-primary font-medium">Symfony 8</span> and <span class="text-primary font-medium">ASP.NET</span>.
+                    Passionné par le développement back-end, je suis à l'aise pour coder en <span class="text-primary font-medium">PHP</span> et <span class="text-primary font-medium">C#</span>, avec un fort intérêt pour les frameworks tels que <span class="text-primary font-medium">Symfony 8</span> et <span class="text-primary font-medium">ASP.NET</span>.
                   </p>
 
                   <p class="text-text-secondary leading-relaxed">
-                    My preferred environment is <span class="text-primary font-medium">ASP.NET</span>, as it allows me to approach projects vertically, from back-end to front-end.  
-                    Through my two training programs, I've also developed a solid command of <span class="text-primary font-medium">SQL</span>.
+                    Mon environnement préféré est <span class="text-primary font-medium">ASP.NET</span>, car il me permet d'aborder les projets de manière verticale, du back-end au front-end.  
+                    Grâce à mes deux programmes de formation, j'ai également acquis une solide maîtrise de <span class="text-primary font-medium">SQL</span>.
                   </p>
 
                   <p class="text-text-secondary leading-relaxed">
-                    I've had a real soft spot for <span class="text-primary font-medium">React</span>, but I also plan to learn <span class="text-primary font-medium">Angular</span>, as I know it's widely used in many enterprise projects — and I don't want to limit myself to just one technology.
+                    J'ai un coup de 💚 pour <span class="text-primary font-medium">React</span>, mais je prévois également d'apprendre <span class="text-primary font-medium">Angular</span>, car je sais qu'il est largement utilisé dans de nombreux projets d'entreprise - et je ne veux pas me limiter à une seule technologie.
                   </p>
                 </div>
                 
@@ -544,7 +557,7 @@
                         <i class="fa-solid fa-palette text-accent text-lg"></i>
                       </div>
 
-                      <h4 class="text-lg font-bold text-primary group-hover:text-accent transition-colors duration-300">Project management</h4>
+                      <h4 class="text-lg font-bold text-primary group-hover:text-accent transition-colors duration-300">Gestion de projet</h4>
                     </div>
 
                     <p class="text-text-secondary text-sm">Git, Notion, Agile, Scrum, Kanban Board, Jira, Trello, Slack, Microsoft Teams, Discord</p>
@@ -556,7 +569,7 @@
                         <i class="fa-solid fa-layer-group text-accent text-lg"></i>
                       </div>
 
-                      <h4 class="text-lg font-bold text-primary group-hover:text-accent transition-colors duration-300">Frameworks</h4>
+                      <h4 class="text-lg font-bold text-primary group-hover:text-accent transition-colors duration-300">Frameworks / Librairies</h4>
                     </div>
 
                     <p class="text-text-secondary text-sm">ASP.NET, Symfony8, Angular, React</p>
@@ -592,7 +605,7 @@
                         <i class="fa-solid fa-database text-accent text-lg"></i>
                       </div>
 
-                      <h4 class="text-lg font-bold text-primary group-hover:text-accent transition-colors duration-300">Database</h4>
+                      <h4 class="text-lg font-bold text-primary group-hover:text-accent transition-colors duration-300">Base de données</h4>
                     </div>
 
                     <p class="text-text-secondary text-sm">SQL Server, ADO.NET, LinQ, MySQL, ORM Doctrine</p>
@@ -614,12 +627,12 @@
                 <div class="flex justify-center sm:justify-start">
                   <a href="./assets/pdf/Deborah Clerckx French CV 2025.pdf" download="" class="bg-black/5 backdrop-blur-sm text-primary px-6 py-3 rounded-lg border border-primary/20 transition-all duration-300 hover:bg-accent hover:border-accent/50 hover:text-white hover:-translate-y-0.5 flex items-center gap-2">
                     <i class="fa-solid fa-download"></i>
-                    Download my resume in French
+                    Télécharger mon CV en français
                   </a>
 
                   <a href="./assets/pdf/Deborah Clerckx English CV 2025.pdf" download="" class="ml-5 bg-black/5 backdrop-blur-sm text-primary px-6 py-3 rounded-lg border border-primary/20 transition-all duration-300 hover:bg-accent hover:border-accent/50 hover:text-white hover:-translate-y-0.5 flex items-center gap-2">
                     <i class="fa-solid fa-download"></i>
-                    Download my resume in English
+                    Télécharger mon CV en anglais
                   </a>
                 </div>
               </div>
@@ -630,10 +643,10 @@
       <!-- END Section Skills -->
 
       <!-- Section Career -->
-      <section id="career" class="min-h-screen flex items-center justify-center bg-background py-16 pt-24">
+      <section id="carriere" class="min-h-screen flex items-center justify-center bg-background py-16 pt-24">
         <div class="container max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
           <h2 class="text-3xl md:text-4xl font-bold text-center text-primary mb-12">
-            About my career in web development
+            A propos de ma carrière dans le développement web
           </h2>
 
           <div class="timeline max-w-[1600px] mx-auto">
@@ -641,11 +654,11 @@
               <div class="hover:bg-white timeline-content">
                 <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
                   <div>
-                    <h3 class="text-xl font-bold text-primary mb-2 text-start">Discovering IT professions</h3>
+                    <h3 class="text-xl font-bold text-primary mb-2 text-start">Découvrir les métiers de l'informatique</h3>
                     
                     <div class="flex items-center gap-2 mb-2">
                       <i class="fa-regular fa-calendar text-accent"></i>
-                      <p class="text-text-secondary">January 2021 - April 2021</p>
+                      <p class="text-text-secondary">Janvier 2021 - Avril 2021</p>
                     </div>
 
                     <div class="flex items-center gap-2">
@@ -653,7 +666,7 @@
                       <p class="text-text-light">Interface3.namur, Namur</p>
                     </div>
 
-                    <p class="text-start text-text-secondary mt-3 text-sm">A 3-month course to discover the professions of front-end and back-end web developer, system and network administrator, UI/UX developer and data analyst.</p>
+                    <p class="text-start text-text-secondary mt-3 text-sm">Une formation de 3 mois pour découvrir les métiers de développeur web front-end et back-end, d'administrateur système et réseau, de développeur UI/UX et d'analyste de données.</p>
 
                     <div class="flex flex-wrap gap-1.5 sm:gap-2 mb-3 sm:mb-4 md:mb-6">
                       <span class="bg-primary/5 text-primary px-2 sm:px-3 py-1 rounded text-xs sm:text-sm">HTML</span>
@@ -668,7 +681,7 @@
                   </div>
 
                   <div class="timeline-logo">
-                    <img src="./assets/img/if3n.png" alt="Logo de l'association Interface3 située à Namur" class="object-contain rounded-full">
+                    <img src="../../assets/img/if3n.png" alt="Logo de l'association Interface3 située à Namur" class="object-contain rounded-full">
                   </div>
                 </div>
               </div>
@@ -678,11 +691,11 @@
               <div class="hover:bg-white timeline-content">
                 <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
                   <div>
-                    <h3 class="text-xl font-bold text-primary mb-2 text-start">Database-oriented back-end developer</h3>
+                    <h3 class="text-xl font-bold text-primary mb-2 text-start">Développeur back-end orienté données</h3>
                     
                     <div class="flex items-center gap-2 mb-2">
                       <i class="fa-regular fa-calendar text-accent"></i>
-                      <p class="text-text-secondary">May 2021 - October 2021</p>
+                      <p class="text-text-secondary">Mai 2021 - Octobre 2021</p>
                     </div>
 
                     <div class="flex items-center gap-2">
@@ -691,7 +704,7 @@
                     </div>
 
                     <p class="text-start text-text-secondary mt-3 text-sm">
-                      Intensive training in the modern JavaScript ecosystem, covering front-end development with React, back-end with Node.js/Express and MongoDB databases. Completion of full-stack projects.
+                      Formation intensive à l'écosystème JavaScript moderne, couvrant le développement front-end avec React, back-end avec Node.js/Express et les bases de données MongoDB. Réalisation de projets complets.
                     </p>
 
                     <div class="flex flex-wrap gap-1.5 sm:gap-2 mb-3 sm:mb-4 md:mb-6">
@@ -713,7 +726,7 @@
                   </div>
 
                   <div class="timeline-logo">
-                    <img src="./assets/img/if3n.png" alt="Logo de l'association Interface3 située à Namur" class="object-contain rounded-full">
+                    <img src="../../assets/img/if3n.png" alt="Logo de l'association Interface3 située à Namur" class="object-contain rounded-full">
                   </div>
                 </div>
               </div>
@@ -729,7 +742,7 @@
 
                     <div class="flex items-center gap-2 mb-2">
                       <i class="fa-regular fa-calendar text-accent"></i>
-                      <p class="text-text-secondary">April 2024 - June 2025</p>
+                      <p class="text-text-secondary">Avril 2024 - Juin 2025</p>
                     </div>
 
                     <div class="flex items-center gap-2">
@@ -738,7 +751,7 @@
                     </div>
 
                     <p class="text-start text-text-secondary mt-3 text-sm">
-                      15-month qualifying course, learning PHP, C#, SQL, HTML/CSS, JavaScript and the Symfony7 and ASP.NET frameworks.
+                      Formation qualifiante de 15 mois permettant d'apprendre PHP, C#, SQL, HTML/CSS, JavaScript et les frameworks Symfony7 et ASP.NET.
                     </p>
 
                     <div class="flex flex-wrap gap-1.5 sm:gap-2 mb-3 sm:mb-4 md:mb-6">
@@ -777,7 +790,7 @@
                   </div>
 
                   <div class="timeline-logo">
-                    <img src="./assets/img/if3b.jpg" alt="Logo de l'association Interface3 située à Bruxelles" class="object-contain rounded-full">
+                    <img src="../../assets/img/if3b.jpg" alt="Logo de l'association Interface3 située à Bruxelles" class="object-contain rounded-full">
                   </div>
                 </div>
               </div>
@@ -788,21 +801,21 @@
                 <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
                   <div>
                     <h3 class="text-xl font-bold text-primary mb-2 text-start">
-                      Developer
+                      Développeuse
                     </h3>
 
                     <div class="flex items-center gap-2 mb-2">
                       <i class="fa-regular fa-calendar text-accent"></i>
-                      <p class="text-text-secondary">January 2022 - Today</p>
+                      <p class="text-text-secondary">Janvier 2022 - Aujourd'hui</p>
                     </div>
 
                     <div class="flex items-center gap-2">
                       <i class="fa-solid fa-location-dot text-accent"></i>
-                      <p class="text-text-light">Christelle Conseillère Numérique, Remote</p>
+                      <p class="text-text-light">Christelle Conseillère Numérique, En ligne</p>
                     </div>
 
                     <p class="text-start text-text-secondary mt-3 text-sm">
-                      On-demand free project, creation of a web application enabling the learners of a Digital Advisor to learn how to use a computer keyboard. Ongoing development.
+                      Projet gratuit à la demande, création d'une application web permettant aux apprenants d'un conseiller numérique d'apprendre à utiliser un clavier d'ordinateur. Développement continu.
                     </p>
 
                     <div class="flex flex-wrap gap-1.5 sm:gap-2 mb-3 sm:mb-4 md:mb-6">
@@ -814,7 +827,7 @@
                   </div>
 
                   <div class="timeline-logo">
-                    <img src="./assets/img/cbcn.png" alt="Logo d'une Conseillère Numérique française, Christelle" class="object-contain rounded-full">
+                    <img src="../../assets/img/cbcn.png" alt="Logo d'une Conseillère Numérique française, Christelle" class="object-contain rounded-full">
                   </div>
                 </div>
               </div>
@@ -825,21 +838,21 @@
                 <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
                   <div>
                     <h3 class="text-xl font-bold text-primary mb-2 text-start">
-                      Developer
+                      Développeuse
                     </h3>
 
                     <div class="flex items-center gap-2 mb-2">
                       <i class="fa-regular fa-calendar text-accent"></i>
-                      <p class="text-text-secondary">July 2024 - Today</p>
+                      <p class="text-text-secondary">Juillet 2024 - Aujourd'hui</p>
                     </div>
 
                     <div class="flex items-center gap-2">
                       <i class="fa-solid fa-location-dot text-accent"></i>
-                      <p class="text-text-light">Anne Karin Court-Payen, Remote</p>
+                      <p class="text-text-light">Anne Karin Court-Payen, En ligne</p>
                     </div>
 
                     <p class="text-start text-text-secondary mt-3 text-sm">
-                      Showcase site created for a French painter to present her services, timetables and various courses/workshops/stages. This project required me to continually find creative solutions despite the technical constraints, as the artist absolutely wanted the site to reflect her Photoshop models. Ongoing development.
+                      Site vitrine réalisé pour une artiste peintre française afin de présenter ses services, ses horaires et ses différents cours/ateliers/stages. Ce projet m'a demandé de trouver continuellement des solutions créatives malgré les contraintes techniques, car l'artiste voulait absolument que le site soit à l'image de ses modèles Photoshop. Développement continu.
                     </p>
 
                     <div class="flex flex-wrap gap-1.5 sm:gap-2 mb-3 sm:mb-4 md:mb-6">
@@ -851,7 +864,7 @@
                   </div>
 
                   <div class="timeline-logo">
-                    <img src="./assets/img/akcp.png" alt="Logo d'une artistre peintre française, Anne Karin Court-Payen" class="object-contain rounded-full">
+                    <img src="../../assets/img/akcp.png" alt="Logo d'une artistre peintre française, Anne Karin Court-Payen" class="object-contain rounded-full">
                   </div>
                 </div>
               </div>
@@ -862,23 +875,23 @@
                 <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
                   <div>
                     <h3 class="text-xl font-bold text-primary mb-2 text-start">
-                      💚 Internship in Back-End Web Development 
+                      💚 Stage en développement web back-end
                     </h3>
 
                     <div class="flex items-center gap-2 mb-2">
                       <i class="fa-regular fa-calendar text-accent"></i>
-                      <p class="text-text-secondary">May 2025 - June 2025</p>
+                      <p class="text-text-secondary">Mai 2025 - Juin 2025</p>
                     </div>
 
                     <div class="flex items-center gap-2">
                       <i class="fa-solid fa-location-dot text-accent"></i>
-                      <p class="text-text-light">Your Company 💚, Bruxelles / Brabant-Wallon / Remote</p>
+                      <p class="text-text-light">Votre entreprise 💚, Bruxelles / Brabant-Wallon / En ligne</p>
                     </div>
 
                     <p class="text-start text-text-secondary mt-3 text-sm"></p>
 
                     <div class="flex flex-wrap gap-1.5 sm:gap-2 mb-3 sm:mb-4 md:mb-6">
-                      <span class="bg-primary/5 text-primary px-2 sm:px-3 py-1 rounded text-xs sm:text-sm">Your technologies 💚</span>
+                      <span class="bg-primary/5 text-primary px-2 sm:px-3 py-1 rounded text-xs sm:text-sm">Vos technologies 💚</span>
                     </div>
                   </div>
 
@@ -893,8 +906,8 @@
 
             <div class="max-w-2xl mx-auto text-center space-y-6">
               <div class="flex flex-col justify-center items-center gap-4 pt-12">
-                <a href="./pages/en/past-lives.html" class="contact-submit-btn">
-                  Learn more about my past experiences
+                <a href="../../pages/fr/vies-avant.html" class="contact-submit-btn">
+                  En savoir plus sur mes expériences passées
                 </a>
               </div>
             </div>
@@ -906,17 +919,17 @@
       <!-- Section Contact -->
       <section id="contact" class="bg-gray-100 py-16 px-4 text-center">
         <h2 class="text-3xl font-semibold text-primary mb-6">
-          How to reach me
+          Comment me contacter
         </h2>
 
         <p class="text-lg text-gray-700 mb-4">
-          Do you have an opportunity, a project or just want to talk? Then write to me!
+          Vous avez une opportunité, un projet ou simplement envie de parler ? Alors écrivez-moi !
         </p>
 
         <div class="max-w-2xl mx-auto text-center space-y-6">
           <div class="flex flex-col justify-center items-center gap-4 pt-12">
             <a href="mailto:gobelynn@gmail.com" class="contact-submit-btn">
-              Let's talk
+              Discutons !
             </a>
           </div>
         </div>
@@ -943,7 +956,7 @@
 
       <!-- Signature -->
       <div class="flex justify-center items-center gap-24 pt-12">
-        <p class="text-primary hover:text-accent transition-all duration-300">Deborah Clerckx<br />2025</p>
+        <p class="text-primary hover:text-accent transition-all duration-300">Deborah Clerckx<br/>2025</p>
       </div>
     </footer>
       <!-- END Signature -->
@@ -968,14 +981,6 @@
         }
       }
     }
-    </script>
-    <script type="text/javascript">
-      // Vérification du code de langue du navigateur
-      if (navigator.language.startsWith('fr')) {
-        window.location.href = "/pages/fr/index.html";  // Rediriger vers la version française
-      } else {
-        window.location.href = "/pages/en";  // Rediriger vers la version anglaise
-      }
     </script>
   </body>
 </html>

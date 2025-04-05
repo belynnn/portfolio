@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Deborah Clerckx, Développeuse Web Back-End.">
+    <meta id="ConnectiveDocSignExtentionInstalled" name="ConnectiveDocSignExtentionInstalled" data-extension-version="1.0.5">
+    <title>Deborah Clerckx - Développeuse Web Back-End</title>
+    <link rel="icon" href="/assets/img/favicon/favicon-16x16.png" type="image/png"></head>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="../../assets/js/script.js"></script>
+  </head>
+
+  <body class="bg-background" cz-shortcut-listen="true">
+    <button id="scrollToTopBtn" onclick="scrollToTop()" class="z-50 bg-surface/80 backdrop-blur-sm">
+      <i class="fa-solid fa-angles-up"></i>
+    </button>
+
+    <header class="fixed w-full z-50 bg-surface/80 backdrop-blur-sm border-b border-border/30">
+      <nav class="container max-w-[2500px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-4">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center gap-2">
+            <a href="../fr/index.html" class="text-primary font-bold text-xl active">CKX</a>
+          </div>
+
+          <!-- Mobile menu button -->
+          <button id="menuBtn" class="md:hidden flex flex-col gap-1.5 p-2 transition-all duration-300">
+            <span class="w-6 h-0.5 rounded-full transition-all duration-300"></span>
+            <span class="w-6 h-0.5 rounded-full transition-all duration-300"></span>
+            <span class="w-6 h-0.5 rounded-full transition-all duration-300"></span>
+          </button>
+
+          <!-- Desktop navigation -->
+          <div class="hidden md:flex gap-6">
+            <a href="../fr/index.html" id="homeLink"  class="text-primary hover:text-accent font-light transition-colors duration-200">Accueil</a>
+            <a href="#a-propos" class="text-primary hover:text-accent font-light transition-colors duration-200">À propos</a>
+            <a href="#vies-avant" class="text-primary hover:text-accent font-light transition-colors duration-200">Vies d'avant</a>
+            <a href="#passions" class="text-primary hover:text-accent font-light transition-colors duration-200">Passions</a>
+            <a href="#carriere" class="text-primary hover:text-accent font-light transition-colors duration-200">Carrière</a>
+            <a href="#contact" class="text-primary hover:text-accent font-light transition-colors duration-200">Contact</a>
+            <button id="switchLang" onclick="switchLanguage()" class="text-accent font-bold">EN 💂</button>
+          </div>
+        </div>
+
+        <!-- Mobile menu panel -->
+        <div id="mobileMenu" class="md:hidden">
+          <div class="mobile-menu-container fixed inset-x-0 top-[72px] h-[calc(100vh-72px)] bg-background/95 backdrop-blur-lg -translate-y-full transition-transform duration-300 ease-in-out flex flex-col items-center justify-start pt-12">
+            <nav class="flex flex-col items-center gap-8">
+              <a href="../fr/index.html" class="mobile-link text-primary hover:text-accent font-light transition-colors duration-200">Accueil</a>
+              <a href="#a-propos" class="mobile-link text-primary hover:text-accent font-light transition-colors duration-200">À propos</a>
+              <a href="#vies-avant" class="mobile-link text-primary hover:text-accent font-light transition-colors duration-200">Vies d'avant</a>
+              <a href="#passions" class="mobile-link text-primary hover:text-accent font-light transition-colors duration-200">Passions</a>
+              <a href="#carriere" class="mobile-link text-primary hover:text-accent font-light transition-colors duration-200">Carrière</a>
+              <a href="#contact" class="mobile-link text-primary hover:text-accent font-light transition-colors duration-200">Contact</a>
+              <button id="switchLang" onclick="switchLanguage()" class="text-accent font-bold">EN 💂</button>
+            </nav>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Section About me -->
+      <section id="a-propos" class="bg-gray-50 py-16 px-4">
+        <h2 class="pt-32 text-2xl sm:text-3xl md:text-4xl font-bold text-center text-primary mb-6 sm:mb-8 md:mb-10 lg:mb-12">
+          Ce que mes amis diraient de moi
+        </h2>
+        <div class="flex justify-center">
+          <div>
+            <p class="text-lg text-gray-700 leading-relaxed mb-3">
+              Mes amis diraient que je suis comme un rayon de soleil dans les jours gris,<br/>
+              une présence chaleureuse et généreuse, pleine de sagesse à partager.
+            </p>
+            <p class="text-lg text-gray-700 leading-relaxed mb-3">
+              Ils diraient que j'ai l'œil vif, celui qui capte les détails que les autres laissent passer,<br/>
+              mais toujours avec gentillesse et un cœur tourné vers le positif.
+            </p>
+            <p class="text-lg text-gray-700 leading-relaxed mb-3">
+              Ils diraient que je suis de ceux qui n'ont pas peur de se remettre en question,<br/>
+              de reconnaître leurs défauts et de s'excuser sincèrement.
+            </p>
+            <p class="text-lg text-gray-700 leading-relaxed mb-3">
+              Ils diraient que ma sensibilité est une force tranquille,<br/>
+              une boussole intérieure qui me guide vers les autres.
+            </p>
+            <p class="text-lg text-gray-700 leading-relaxed mb-3">
+              Ils diraient que j'ai un don subtil : la capacité de sentir les âmes,<br/>
+              d'apaiser les tensions et d'apporter de l'harmonie dans la vie.
+            </p>
+            <p class="text-lg text-gray-700 leading-relaxed">
+              Ils diraient que je crée des équipes qui se comprennent,<br/>
+              et des duos qui se complètent presque naturellement.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- END Section About me -->
+
+      <!-- Section Past-lives -->
+      <section id="vies-avant" class="bg-gray-50 py-16 px-4">
+        <h2 class="mt-20 text-2xl sm:text-3xl md:text-4xl font-bold text-center text-primary mb-6 sm:mb-8 md:mb-10 lg:mb-12">
+          Dans mes vies passées, j'étais...
+        </h2>
+        <div class="flex justify-center">
+          <ul>
+            <li class="mb-3">
+              <span class="font-bold">
+                Cheffe d'entreprise</span><br/>
+                Où j'ai travaillé 2 jours par semaine pendant 1 an dans une boutique de bandes dessinées, pour obtenir mon CESS.
+              </li>
+            <li class="mb-3">
+              <span class="font-bold">
+                Vendeuse polyvalente</span><br/>
+                Pendant 5 ans, à travers mes études et mes premiers emplois.
+              </li>
+            <li class="mb-3">
+              <span class="font-bold">
+                Valoriste menuisière</span><br/>
+                Pendant 2 ans, par le biais d'une formation en entreprise pendant 1 an, et en tant qu'employé d'un centre de recyclage pendant 1 an.
+              </li>
+            <li class="mb-3">
+              <span class="font-bold">Joueuse semi-pro CSGO</span><br/>
+              Pendant 3 ans, où j'étais principalement un joueur de soutien, analysant les matchs, développant des stratégies et étudiant les positions.<br/>
+              J'ai également eu l'occasion de participer à une LAN à Copenhague avec DizLown.
+            </li>
+            <li class="mb-3">
+              <span class="font-bold">Joueuse semi-pro en billard à bouchon <span class="font-light text-text-light">(oui, je sais, c'est rare, mais j'adore le billard)</span></span><br/>
+              Pendant 12 ans où j'ai joué dans l'équipe familiale dans des championnats contre d'autres équipes du Hainaut et du Brabant-Wallon.<br/>
+              J'ai également joué lors de compétitions individuelles et en duo.
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- END Section Past-lives -->
+
+      <!-- Section Passions -->
+      <section id="passions" class="bg-gray-50 py-16 px-4">
+        <h2 class="mt-20 text-2xl sm:text-3xl md:text-4xl font-bold text-center text-primary mb-6 sm:mb-8 md:mb-10 lg:mb-12">
+          Ce que j'adore faire
+        </h2>
+        <div class="flex justify-center">
+          <ul>
+            <li class="mb-5">
+              <span class="font-bold text-xl text-primary">🌿 M'immerger dans la nature</span><br/>
+              Je m'épanouis en plein air, surtout lorsque j'observe des insectes dans leur habitat naturel.<br/>
+              Rejoignez-moi dans mon voyage d'exploration - je partage mes découvertes sur <a class="text-primary" href="https://observations.be/users/936342/" target="_blank">Observation.org</a> et <a class="text-primary" href="https://www.inaturalist.org/people/ckxd" target="_blank">iNaturalist</a>.
+            </li>
+            <li class="mb-5">
+              <span class="font-bold text-xl text-primary">🎶 Musique : Ma bande-son en constante évolution</span><br/>
+              Je ne suis pas du genre à m'attacher à un groupe ou à un artiste en particulier, mais j'écoute la musique pour ce qu'elle me fait ressentir au moment présent.<br/>
+              En ce moment, voici mes morceaux préférés, qui tournent en boucle :
+              <div aria-hidden="true">
+                <div class="mt-2 grid grid-cols-1 min-[1072px]:grid-cols-2 xl:grid-cols-3 gap-8 sm:gap-10 md:gap-12 lg:gap-14 justify-items-center">  
+                  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1j21bKbHLoNaVWHZykBcDD?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="fullscreen" loading="lazy"></iframe>
+                  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2MgRsq3PLtGVqex5MkBlUD?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="fullscreen" loading="lazy"></iframe>
+                  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1HVYQj4liQb1QOygBfjZqV?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="fullscreen" loading="lazy"></iframe>
+                </div>
+              </div>
+            </li>
+            <li>
+              <span class="font-bold text-xl text-primary">🎨 Dessin et pastels à l'huile</span><br/>
+              Cela fait deux ans que j'ai commencé à suivre des cours de dessin hebdomadaires, et c'est maintenant mon moment de détente quotidien ! <br/>
+              Voici quelques-unes de mes œuvres préférées :
+              <div aria-hidden="true">
+                <div class="mt-2 grid grid-cols-1 min-[1072px]:grid-cols-2 xl:grid-cols-3 gap-8 sm:gap-10 md:gap-12 lg:gap-14 justify-items-center">
+                  <a href="https://www.instagram.com/p/DGSTCO1AeQ6/" target="_blank"><img src="../../assets/img/debbydrawportrait.jpg" alt="Portrait Drawing" width="150"></a>
+                  <a href="https://www.instagram.com/p/C3vT6ndocgf/" target="_blank"><img src="../../assets/img/debbydrawinseparable.png" alt="Inseparable Drawing" width="195"></a>
+                  <a href="https://www.instagram.com/p/DDGrcvmIADF/" target="_blank"><img src="../../assets/img/debbydrawpain.png" alt="Pain Drawing" width="160"></a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- END Section Passions -->
+
+      <!-- Section About -->
+      <section id="carriere" class="min-h-screen flex items-center justify-center bg-background py-16 pt-24">
+        <div class="container max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-center text-primary mb-12">
+            A propos de mes anciennes vies
+          </h2>
+          <div class="timeline max-w-[1600px] mx-auto">
+            <div class="timeline-item">
+              <div class="hover:bg-white timeline-content">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                  <div>
+                    <h3 class="text-xl font-bold text-primary mb-2 text-start">CEB</h3>
+                    <div class="flex items-center gap-2 mb-2">
+                      <i class="fa-solid fa-calendar text-accent"></i>
+                      <p class="text-text-secondary">Septembre 1996 - Juin 2005</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <i class="fa-solid fa-location-dot text-accent"></i>
+                      <p class="text-text-light">Ecole Saint-Remy - Braine-le-Château</p>
+                    </div>
+                  </div>
+                  <div class="timeline-logo">
+                    <img src="../../assets/img/esr.png" alt="💚" class="object-contain rounded-full">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="hover:bg-white timeline-content">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                  <div>
+                    <h3 class="text-xl font-bold text-primary mb-2 text-start">
+                      CESS - Vendeuse spécialisée et gestion de très petites et moyennes entreprises
+                    </h3>
+                    <div class="flex items-center gap-2 mb-2">
+                      <i class="fa-solid fa-calendar text-accent"></i>
+                      <p class="text-text-secondary">Septembre 2005 - Juin 2012</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <i class="fa-solid fa-location-dot text-accent"></i>
+                      <p class="text-text-light">Institut de la Vallée Bailly - Braine-l'Alleud</p>
+                    </div>
+
+                    <div>
+                      <h4 class="text-start font-bold text-text-secondary mt-3 mb-1 text-sm">CESI</h4>
+                      <div class="pl-2 mb-5">
+                        <p class="text-start text-text-secondary mb-1 text-sm">Stages :</p>
+                        <ul class="list-disc pl-6 mb-1">
+                          <li class="text-start pl-1 text-text-secondary text-sm">JBC, durant 2 semaines</li>
+                          <li class="text-start pl-1 text-text-secondary text-sm">Le Grenier de Xavière, durant 2 semaines</li>
+                          <li class="text-start pl-1 text-text-secondary text-sm">BD World, durant 1 mois</li>
+                          <li class="text-start pl-1 text-text-secondary text-sm">Vanille Fraise, durant 1 mois</li>
+                        </ul>
+                      </div>
+                      <div class="pl-2 mb-5">
+                        <p class="text-start text-text-secondary mb-1 mt-3 text-sm">Projets :</p>
+                        <ul class="list-disc pl-6 mb-4">
+                          <li class="text-start pl-1 text-text-secondary text-sm">Conception de 2 vitrines dans l'espace de vente de l'école</li>
+                          <li class="text-start pl-1 text-text-secondary text-sm">Conception d'1 vitrine en partenariat avec Ofxam à Waterloo</li>
+                          <li class="text-start pl-1 text-text-secondary text-sm">Conception d'1 produit + présentation à un jury</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div>
+                      <h4 class="text-start font-bold text-text-secondary mt-3 mb-1 text-sm">CESS</h4>
+                      <div class="pl-2 mb-5">
+                        <p class="text-start text-text-secondary mb-1 text-sm">Stage :</p>
+                        <ul class="list-disc pl-6 mb-4">
+                          <li class="text-start pl-1 text-text-secondary text-sm">BD World, pendant 1 an, 2 fois par semaine</li>
+                        </ul>
+                      </div>
+                      <div class="pl-2 mb-5">
+                        <p class="text-start text-text-secondary mb-1 mt-3 text-sm">Projets :</p>
+                        <ul class="list-disc pl-6 mb-4">
+                          <li class="text-start pl-1 text-text-secondary text-sm"><span class="font-bold">TFE</span> : Conception d'une fausse entreprise pendant 1 an + présentation à un jury</li>
+                          <li class="text-start pl-1 text-text-secondary text-sm">Conception de 2 vitrines dans l'espace de vente de l'école</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <p class="text-start text-text-light text-sm">Chaque stage était accompagné d'un rapport de stage écrit et d'une présentation orale avant d'être soumis à un jury.</p>
+                  </div>
+
+                  <div class="timeline-logo">
+                    <img src="../../assets/img/ivbpng.png" alt="💚" class="object-contain rounded-full">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="hover:bg-white timeline-content">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                  <div>
+                    <h3 class="text-xl font-bold text-primary mb-2 text-start">Assistante en psychologie</h3>
+                    <div class="flex items-center gap-2 mb-2">
+                      <i class="fa-solid fa-calendar text-accent"></i>
+                      <p class="text-text-secondary">Septembre 2013 - Juin 2014</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <i class="fa-solid fa-location-dot text-accent"></i>
+                      <p class="text-text-light">Institut Libre Marie Haps, Bruxelles</p>
+                    </div>
+                    <div class="pl-2 mb-5 mt-3">
+                      <p class="text-start text-text-secondary mb-1 text-sm">Stage :</p>
+                      <ul class="list-disc pl-6 mb-4">
+                        <li class="text-start pl-1 text-text-secondary text-sm">Observation d'un enfant de 7 ans avec l'accord de la famille, pendant 1 mois, 2 fois par semaine</li>
+                      </ul>
+
+                      <p class="text-start text-text-light mb-1 text-sm">Études non terminées pour des raisons financières.</p>
+                    </div>
+                  </div>
+                  <div class="timeline-logo">
+                    <img src="../../assets/img/ilmh.png" alt="💚" class="object-contain rounded-full">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="hover:bg-white timeline-content">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                  <div>
+                    <h3 class="text-xl font-bold text-primary mb-2 text-start">Job étudiant Technicien de surface</h3>
+                    <div class="flex items-center gap-2 mb-2">
+                      <i class="fa-solid fa-calendar text-accent"></i>
+                      <p class="text-text-secondary">Septembre 2014 - Octobre 2014</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <i class="fa-solid fa-location-dot text-accent"></i>
+                      <p class="text-text-light">ISS Cleaning - Wauthier-Braine</p>
+                    </div>
+                    <p class="text-start text-text-secondary mt-3 text-sm"></p>
+                  </div>
+                  <div class="timeline-logo">
+                    <img src="../../assets/img/issc.png" alt="💚" class="object-contain rounded-full">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="hover:bg-white timeline-content">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                  <div>
+                    <h3 class="text-xl font-bold text-primary mb-2 text-start">Job étudiant Ouvrière polyvalente</h3>
+                    <div class="flex items-center gap-2 mb-2">
+                      <i class="fa-solid fa-calendar text-accent"></i>
+                      <p class="text-text-secondary">Octobre 2014 - Novembre 2014</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <i class="fa-solid fa-location-dot text-accent"></i>
+                      <p class="text-text-light">Maison communale - Braine-le-Château</p>
+                    </div>
+                    <p class="text-start text-text-secondary mt-3 text-sm"></p>
+                  </div>
+                  <div class="timeline-logo">
+                    <img src="../../assets/img/blc.png" alt="💚" class="object-contain rounded-full">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="hover:bg-white timeline-content">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                  <div>
+                    <h3 class="text-xl font-bold text-primary mb-2 text-start">Employée polyvalent</h3>
+                    <div class="flex items-center gap-2 mb-2">
+                      <i class="fa-solid fa-calendar text-accent"></i>
+                      <p class="text-text-secondary">Juillet 2014 - Avril 2015</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <i class="fa-solid fa-location-dot text-accent"></i>
+                      <p class="text-text-light">Supermarché MATCH, Braine-l'Alleud</p>
+                    </div>
+                    <p class="text-start text-text-secondary mt-3 text-sm"></p>
+                    <div class="flex flex-wrap gap-1.5 sm:gap-2 mb-3 sm:mb-4 md:mb-6">
+                      <span class="bg-primary/5 text-primary px-2 sm:px-3 py-1 rounded text-xs sm:text-sm">Caisse</span>
+                      <span class="bg-primary/5 text-primary px-2 sm:px-3 py-1 rounded text-xs sm:text-sm">Boulangerie</span>
+                      <span class="bg-primary/5 text-primary px-2 sm:px-3 py-1 rounded text-xs sm:text-sm">Épicerie</span>
+                      <span class="bg-primary/5 text-primary px-2 sm:px-3 py-1 rounded text-xs sm:text-sm">Fruits et légumes</span>
+                      <span class="bg-primary/5 text-primary px-2 sm:px-3 py-1 rounded text-xs sm:text-sm">Fresh Découp'</span>
+                      <span class="bg-primary/5 text-primary px-2 sm:px-3 py-1 rounded text-xs sm:text-sm">Produits frais</span>
+                      <span class="bg-primary/5 text-primary px-2 sm:px-3 py-1 rounded text-xs sm:text-sm">Fromages et charcuteries</span>
+                      <span class="bg-primary/5 text-primary px-2 sm:px-3 py-1 rounded text-xs sm:text-sm">Produits surgelés</span>
+                    </div>
+                  </div>
+                  <div class="timeline-logo">
+                    <img src="../../assets/img/spmktm.png" alt="💚" class="object-contain rounded-full">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="hover:bg-white timeline-content">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                  <div>
+                    <h3 class="text-xl font-bold text-primary mb-2 text-start">Membre du conseil d'administration</h3>
+                    <div class="flex items-center gap-2 mb-2">
+                      <i class="fa-solid fa-calendar text-accent"></i>
+                      <p class="text-text-secondary">Juillet 2014 - Juillet 2015</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <i class="fa-solid fa-location-dot text-accent"></i>
+                      <p class="text-text-light">Collectif KPOP BELGIUM, Bruxelles</p>
+                    </div>
+                    <p class="text-start text-text-secondary mt-3 text-sm"></p>
+                  </div>
+                  <div class="timeline-logo">
+                    <img src="../../assets/img/kpb.jpg" alt="💚" class="object-contain rounded-full">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="hover:bg-white timeline-content">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                  <div>
+                    <h3 class="text-xl font-bold text-primary mb-2 text-start">Animatrice, modératrice et administratrice</h3>
+                    <div class="flex items-center gap-2 mb-2">
+                      <i class="fa-solid fa-calendar text-accent"></i>
+                      <p class="text-text-secondary">Octobre 2015 - Novembre 2016</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <i class="fa-solid fa-location-dot text-accent"></i>
+                      <p class="text-text-light">Warea, En ligne</p>
+                    </div>
+                    <p class="text-start text-text-secondary mt-3 text-sm">Serveur communautaire World of Warcraft</p>
+                  </div>
+                  <div class="timeline-logo">
+                    <img src="../../assets/img/wow.png" alt="💚" class="object-contain rounded-full">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="hover:bg-white timeline-content">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                  <div>
+                    <h3 class="text-xl font-bold text-primary mb-2 text-start">Formation en porte-à-porte</h3>
+                    <div class="flex items-center gap-2 mb-2">
+                      <i class="fa-solid fa-calendar text-accent"></i>
+                      <p class="text-text-secondary">Février 2017 - Mars 2017</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <i class="fa-solid fa-location-dot text-accent"></i>
+                      <p class="text-text-light">APPCO Group - Charleroi</p>
+                    </div>
+                    <p class="text-start text-text-secondary mt-3 text-sm"></p>
+                  </div>
+                  <div class="timeline-logo">
+                    <img src="../../assets/img/appco.jpg" alt="💚" class="object-contain rounded-full">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="hover:bg-white timeline-content">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                  <div>
+                    <h3 class="text-xl font-bold text-primary mb-2 text-start">Animatrice et modératrice</h3>
+                    <div class="flex items-center gap-2 mb-2">
+                      <i class="fa-solid fa-calendar text-accent"></i>
+                      <p class="text-text-secondary">Janvier 2016 - Juillet 2017</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <i class="fa-solid fa-location-dot text-accent"></i>
+                      <p class="text-text-light">Isolonice, En ligne</p>
+                    </div>
+                    <p class="text-start text-text-secondary mt-3 text-sm">Serveur communautaire Minecraft</p>
+                  </div>
+                  <div class="timeline-logo">
+                    <img src="../../assets/img/isolonice.png" alt="💚" class="object-contain rounded-full">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="hover:bg-white timeline-content">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                  <div>
+                    <h3 class="text-xl font-bold text-primary mb-2 text-start">Animatrice et modératrice</h3>
+                    <div class="flex items-center gap-2 mb-2">
+                      <i class="fa-solid fa-calendar text-accent"></i>
+                      <p class="text-text-secondary">Août 2017 - Janvier 2018</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <i class="fa-solid fa-location-dot text-accent"></i>
+                      <p class="text-text-light">Maestrie, En ligne</p>
+                    </div>
+                    <p class="text-start text-text-secondary mt-3 text-sm">Serveur communautaire Minecraft</p>
+                  </div>
+                  <div class="timeline-logo">
+                    <img src="../../assets/img/maestrie.avif" alt="💚" class="object-contain rounded-full">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="hover:bg-white timeline-content">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                  <div>
+                    <h3 class="text-xl font-bold text-primary mb-2 text-start">Formation en Néerlandais</h3>
+                    <div class="flex items-center gap-2 mb-2">
+                      <i class="fa-solid fa-calendar text-accent"></i>
+                      <p class="text-text-secondary">Mars 2018 - Juin 2018</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <i class="fa-solid fa-location-dot text-accent"></i>
+                      <p class="text-text-light">Forem - Tubize</p>
+                    </div>
+                    <p class="text-start text-text-secondary mt-3 text-sm">A2</p>
+                  </div>
+                  <div class="timeline-logo">
+                    <img src="../../assets/img/forem.jpg" alt="💚" class="object-contain rounded-full">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="hover:bg-white timeline-content">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                  <div>
+                    <h3 class="text-xl font-bold text-primary mb-2 text-start">Valoriste</h3>
+                    <div class="flex items-center gap-2 mb-2">
+                      <i class="fa-solid fa-calendar text-accent"></i>
+                      <p class="text-text-secondary">Septembre 2019 - Août 2020</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <i class="fa-solid fa-location-dot text-accent"></i>
+                      <p class="text-text-light">AID Val de Senne, Tubize</p>
+                    </div>
+                    <p class="text-start text-text-secondary mt-3 text-sm"></p>
+                  </div>
+                  <div class="timeline-logo">
+                    <img src="../../assets/img/aidvds.png" alt="💚" class="object-contain rounded-full">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="hover:bg-white timeline-content">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                  <div>
+                    <h3 class="text-xl font-bold text-primary mb-2 text-start">Employée valoriste polyvalente</h3>
+                    <div class="flex items-center gap-2 mb-2">
+                      <i class="fa-solid fa-calendar text-accent"></i>
+                      <p class="text-text-secondary">Septembre 2020 - Août 2021</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <i class="fa-solid fa-location-dot text-accent"></i>
+                      <p class="text-text-light">Restor (La Ressourcerie), Tubize</p>
+                    </div>
+                    <p class="text-start text-text-secondary mt-3 text-sm"></p>
+                  </div>
+                  <div class="timeline-logo">
+                    <img src="../../assets/img/restor.png" alt="💚" class="object-contain rounded-full">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="hover:bg-white timeline-content">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                  <div>
+                    <h3 class="text-xl font-bold text-primary mb-2 text-start">Technicienne de surface</h3>
+                    <div class="flex items-center gap-2 mb-2">
+                      <i class="fa-solid fa-calendar text-accent"></i>
+                      <p class="text-text-secondary">Octobre 2021 - Janvier 2022</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <i class="fa-solid fa-location-dot text-accent"></i>
+                      <p class="text-text-light">La Chevalerie, Florennes</p>
+                    </div>
+                    <p class="text-start text-text-secondary mt-3 text-sm"></p>
+                  </div>
+                  <div class="timeline-logo">
+                    <img src="../../assets/img/cf.png" alt="💚" class="object-contain rounded-full">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="hover:bg-white timeline-content">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                  <div>
+                    <h3 class="text-xl font-bold text-primary mb-2 text-start">Modératrice et graphiste</h3>
+                    <div class="flex items-center gap-2 mb-2">
+                      <i class="fa-solid fa-calendar text-accent"></i>
+                      <p class="text-text-secondary">Août 2017 - Today</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <i class="fa-solid fa-location-dot text-accent"></i>
+                      <p class="text-text-light">Gatynn, En ligne</p>
+                    </div>
+                    <p class="text-start text-text-secondary mt-3 text-sm"></p>
+                  </div>
+                  <div class="timeline-logo">
+                    <img src="../../assets/img/gatynn.png" alt="💚" class="object-contain rounded-full">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="hover:bg-white timeline-content">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                  <div>
+                    <h3 class="text-xl font-bold text-primary mb-2 text-start">Streamer Twitch</h3>
+                    <div class="flex items-center gap-2 mb-2">
+                      <i class="fa-solid fa-calendar text-accent"></i>
+                      <p class="text-text-secondary">Août 2017 - Aujourd'hui</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <i class="fa-solid fa-location-dot text-accent"></i>
+                      <p class="text-text-light">Belynn__, En ligne</p>
+                    </div>
+                    <p class="text-start text-text-secondary mt-3 text-sm"></p>
+                  </div>
+                  <div class="timeline-logo">
+                    <img src="../../assets/img/belynn.png" alt="💚" class="object-contain rounded-full">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="flex justify-center items-center gap-24 pt-12">
+              <a href="../fr/index.html" class="z-10 inline-block bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary-dark transition duration-300 shadow">
+                Retour à ma 9ème vie
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END Section About -->
+
+      <!-- Section Contact -->
+      <section id="contact" class="bg-gray-100 py-16 px-4 text-center">
+        <h2 class="text-3xl font-semibold text-primary mb-6">
+          Comment me contacter
+        </h2>
+        <p class="text-lg text-gray-700 mb-4">
+          Vous avez une opportunité, un projet ou simplement envie de parler ? Alors écrivez-moi !
+        </p>
+        <a href="mailto:gobelynn@email.com" class="inline-block bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary-dark transition duration-300 shadow">
+          Discutons !
+        </a>
+      </section>
+      <!-- END Section Contact -->
+    </main>
+
+    <footer class="text-center text-sm text-gray-500 py-6">
+      <!-- Social media -->
+      <div class="flex justify-center items-center gap-24 pt-12">
+        <a href="https://www.linkedin.com/in/deborah-clerckx/" target="_blank" class="text-primary hover:text-accent transition-all duration-300">
+          <i class="fa-brands fa-linkedin-in text-2xl"></i>
+        </a>
+        <a href="https://github.com/belynnn" target="_blank" class="text-primary hover:text-accent transition-all duration-300">
+          <i class="fa-brands fa-github text-2xl"></i>
+        </a>
+        <a href="mailto:gobelynn@gmail.com" class="text-primary hover:text-accent transition-all duration-300">
+          <i class="fa-solid fa-at text-2xl"></i>
+        </a>
+      </div>
+      <!-- END Social media -->
+
+      <!-- Signature -->
+      <div class="flex justify-center items-center gap-24 pt-12">
+        <p class="text-primary hover:text-accent transition-all duration-300">Deborah Clerckx<br />2025</p>
+      </div>
+    </footer>
+      <!-- END Signature -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <script>
+      tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'background': 'var(--background)',
+            'background-alt': 'var(--background-alt)',
+            'surface': 'var(--surface)',
+            'surface-hover': 'var(--surface-hover)',
+            'primary': 'var(--primary)',
+            'primary-dark': 'var(--primary-dark)',
+            'secondary': 'var(--secondary)',
+            'accent': 'var(--accent)',
+            'text-primary': 'var(--text-primary)',
+            'text-secondary': 'var(--text-secondary)',
+            'text-light': 'var(--text-light)',
+            'border': 'var(--border)',
+          }
+        }
+      }
+    }
+    </script>
+  </body>
+</html>
