@@ -679,7 +679,7 @@ header {
 
 /* Hamburger button styles */
   #menuBtn {
-  z-index: 50;
+  z-index: 1;
 }
 
 /* Hamburger bars */
@@ -706,81 +706,6 @@ transform: scale(0);
 transform: translateY(-8px) rotate(-45deg);
 }
 
-/* Tooltip setup */
-.data-tooltip {
-position: relative;
-}
-
-/* Tooltip display */
-.data-tooltip::after {
-content: attr(data-tooltip-content);
-position: absolute;
-bottom: -40px;
-left: 50%;
-transform: translateX(-50%);
-background-color: rgba(0, 0, 0, 0.8);
-color: white;
-padding: 4px 8px;
-border-radius: 4px;
-font-size: 12px;
-white-space: nowrap;
-opacity: 0;
-visibility: hidden;
-transition: all 0.3s ease;
-pointer-events: none;
-z-index: 100;
-}
-
-/* Show tooltip on hover */
-.data-tooltip:hover::after {
-opacity: 1;
-visibility: visible;
-}
-
-/* Pulse animation for borders */
-@keyframes pulse-border {
-0%, 100% { opacity: 0.6; }
-50% { opacity: 1; }
-}
-
-/* Subtle pulse animation for icons */
-.skill-icon-container {
-animation: pulse-icon 3s ease-in-out infinite;
-animation-delay: calc(var(--pulse-delay, 0) * 0.5s);
-}
-
-/* Animation delays for each icon */
-.skill-orbital:nth-child(1) .skill-icon-container { --pulse-delay: 0; }
-.skill-orbital:nth-child(2) .skill-icon-container { --pulse-delay: 1; }
-.skill-orbital:nth-child(3) .skill-icon-container { --pulse-delay: 2; }
-.skill-orbital:nth-child(4) .skill-icon-container { --pulse-delay: 3; }
-.skill-orbital:nth-child(5) .skill-icon-container { --pulse-delay: 4; }
-.skill-orbital:nth-child(6) .skill-icon-container { --pulse-delay: 5; }
-.skill-orbital:nth-child(7) .skill-icon-container { --pulse-delay: 6; }
-.skill-orbital:nth-child(8) .skill-icon-container { --pulse-delay: 7; }
-
-/* Pulse animation keyframes */
-@keyframes pulse-icon {
-0%, 100% { 
-  transform: scale(1) translate(var(--translate-x, 0), var(--translate-y, 0)); 
-  box-shadow: 0 0 20px rgba(41, 255, 41, 0.1);
-}
-50% { 
-  transform: scale(1.05) translate(var(--translate-x, 0), var(--translate-y, 0)); 
-  box-shadow: 0 0 25px rgba(41, 255, 70, 0.2);
-}
-}
-
-/* Icon position variables */
-.skill-orbital:nth-child(1) .skill-icon-container { --translate-y: -180px; }
-.skill-orbital:nth-child(2) .skill-icon-container { --translate-x: 127px; --translate-y: -127px; }
-.skill-orbital:nth-child(3) .skill-icon-container { --translate-x: 180px; }
-.skill-orbital:nth-child(4) .skill-icon-container { --translate-x: 127px; --translate-y: 127px; }
-.skill-orbital:nth-child(5) .skill-icon-container { --translate-y: 180px; }
-.skill-orbital:nth-child(6) .skill-icon-container { --translate-x: -127px; --translate-y: 127px; }
-.skill-orbital:nth-child(7) .skill-icon-container { --translate-x: -180px; }
-.skill-orbital:nth-child(8) .skill-icon-container { --translate-x: -127px; --translate-y: -127px; } 
-
 /* Style du bouton revenir en haut */
 #scrollToTopBtn {
   position: fixed;
@@ -793,7 +718,7 @@ animation-delay: calc(var(--pulse-delay, 0) * 0.5s);
   font-size: 1.5rem;
   cursor: pointer;
   display: none; /* Cache le bouton par défaut */
-  z-index: 1000;
+  z-index: 1;
 }
 
 /* Style du bouton revenir en haut au survol */
