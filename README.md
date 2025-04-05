@@ -1,3 +1,11 @@
-# Work in progress
+# Portfolio
+Welcome on my portfolio repo GitHub!
+Created during my Web Application Developer training course, organised by the Interface3 training center in 2025.
 
-Portfolio réalisé durant la formation Web Application Developer, organisé par le centre de formation Interface3.
+## Technologies & Tools
+- HTML
+- CSS
+- TailwindCSS
+- FontAwesome
+- JavaScript
+- GIT
