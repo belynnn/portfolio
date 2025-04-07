@@ -1,7 +1,7 @@
-// Récupère le bouton
+//#region //! BOUTON POUR REMONTER EN HAUT DU SITE
+// Récupèrer le bouton
 var myButton = document.getElementById("scrollToTopBtn");
-
-// Fonction qui montre ou cache le bouton en fonction du défilement
+// Affiche ou cache le bouton en fonction du défilement
 window.onscroll = function() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     myButton.style.display = "block";  // Affiche le bouton quand on descend
@@ -9,29 +9,26 @@ window.onscroll = function() {
     myButton.style.display = "none";   // Cache le bouton quand on est en haut
   }
 };
-
-// Fonction pour revenir en haut de la page
+// Revenir en haut de la page
 function scrollToTop() {
   document.body.scrollTop = 0; // Pour Safari
   document.documentElement.scrollTop = 0; // Pour les autres navigateurs
 }
+//#endregion
 
+//#region //! NAVIGATION MOBILE
 // Mobile menu handling
 const menuBtn = document.getElementById('menuBtn');
 const mobileMenu = document.querySelector('#mobileMenu .mobile-menu-container');
 const mobileLinks = document.querySelectorAll('#mobileMenu .mobile-link');
-
 // Toggle menu state
 function toggleMenu() {
-  console.log('Toggle menu called'); // Vérifie si cette ligne s'affiche dans la console
   mobileMenu.classList.toggle('open'); // Ajoute/retire la classe 'open' pour afficher/masquer le menu
   menuBtn.classList.toggle('active');  // Ajoute/retire la classe 'active' au bouton hamburger
 }
-
 // Menu button click handler
 menuBtn.addEventListener('click', toggleMenu);
-
-// Fermer le menu quand un lien mobile est cliqué
+// Fermer le menu quand un lien mobile est tapé
 mobileLinks.forEach(link => {
   link.addEventListener('click', () => {
     toggleMenu(); // Ferme le menu
@@ -45,22 +42,21 @@ mobileLinks.forEach(link => {
     }, 300); // Attendre 300ms (durée de l'animation) avant de défiler
   });
 });
-
 // Fermer le menu si on clique en dehors
 mobileMenu.addEventListener('click', (e) => {
   if (e.target === mobileMenu) { // Si on clique en dehors du menu
     toggleMenu(); // Ferme le menu
   }
 });
-
 // Fermer le menu lors du redimensionnement de l'écran
 window.addEventListener('resize', () => {
   if (window.innerWidth >= 768 && menuBtn.classList.contains('active')) {
     toggleMenu(); // Ferme le menu si l'écran est large
   }
 });
+//#endregion
 
-// Fonction pour changer la langue
+//#region //! CHANGEMENT DE LANGUE
 function switchLanguage() {
   // Si la langue actuelle est français (fr)
   if (document.documentElement.lang === 'fr') {
@@ -75,3 +71,4 @@ function switchLanguage() {
       window.location.href = '/portfolio/pages/fr/index.html';  // Rediriger vers l'URL française
   }
 }
+//#endregion
