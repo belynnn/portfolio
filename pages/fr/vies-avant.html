@@ -37,12 +37,12 @@
 
           <!-- Desktop navigation -->
           <div class="hidden md:flex gap-6">
-            <a href="../fr/index.html" id="homeLink"  class="text-primary hover:text-accent font-light transition-colors duration-200">Accueil</a>
-            <a href="#a-propos" class="text-primary hover:text-accent font-light transition-colors duration-200">À propos</a>
-            <a href="#vies-avant" class="text-primary hover:text-accent font-light transition-colors duration-200">Vies d'avant</a>
-            <a href="#passions" class="text-primary hover:text-accent font-light transition-colors duration-200">Passions</a>
-            <a href="#carriere" class="text-primary hover:text-accent font-light transition-colors duration-200">Carrière</a>
-            <a href="#contact" class="text-primary hover:text-accent font-light transition-colors duration-200">Contact</a>
+            <a href="../fr/index.html" id="homeLink" class="text-primary hover:text-accent font-bold transition-colors duration-200">Accueil</a>
+            <a href="#a-propos" class="text-primary hover:text-accent font-bold transition-colors duration-200">À propos</a>
+            <a href="#projets" class="text-primary hover:text-accent font-bold transition-colors duration-200">Projets</a>
+            <a href="#competences" class="text-primary hover:text-accent font-bold transition-colors duration-200">Compétences</a>
+            <a href="#carriere" class="text-primary hover:text-accent font-bold transition-colors duration-200">Carrière</a>
+            <a href="#contact" class="text-primary hover:text-accent font-bold transition-colors duration-200">Contact</a>
             <button id="switchLang" onclick="switchLanguage()" class="text-accent font-bold">EN 💂</button>
           </div>
         </div>
@@ -51,13 +51,13 @@
         <div id="mobileMenu" class="md:hidden">
           <div class="mobile-menu-container fixed inset-x-0 top-[72px] h-[calc(100vh-72px)] bg-background/95 backdrop-blur-lg -translate-y-full transition-transform duration-300 ease-in-out flex flex-col items-center justify-start pt-12">
             <nav class="flex flex-col items-center gap-8">
-              <a href="../fr/index.html" class="mobile-link text-primary hover:text-accent font-light transition-colors duration-200">Accueil</a>
-              <a href="#a-propos" class="mobile-link text-primary hover:text-accent font-light transition-colors duration-200">À propos</a>
-              <a href="#vies-avant" class="mobile-link text-primary hover:text-accent font-light transition-colors duration-200">Vies d'avant</a>
-              <a href="#passions" class="mobile-link text-primary hover:text-accent font-light transition-colors duration-200">Passions</a>
-              <a href="#carriere" class="mobile-link text-primary hover:text-accent font-light transition-colors duration-200">Carrière</a>
-              <a href="#contact" class="mobile-link text-primary hover:text-accent font-light transition-colors duration-200">Contact</a>
-              <button id="switchLang" onclick="switchLanguage()" class="text-accent font-bold">EN 💂</button>
+              <a href="../fr/index.html" id="homeLink"  class="mobile-link text-primary hover:text-accent font-bold transition-colors duration-200">Accueil</a>
+              <a href="#a-propos" class="mobile-link text-primary hover:text-accent font-bold transition-colors duration-200">À propos</a>
+              <a href="#projets" class="mobile-link text-primary hover:text-accent font-bold transition-colors duration-200">Projets</a>
+              <a href="#competences" class="mobile-link text-primary hover:text-accent font-bold transition-colors duration-200">Compétences</a>
+              <a href="#carriere" class="mobile-link text-primary hover:text-accent font-bold transition-colors duration-200">Carrière</a>
+              <a href="#contact" class="mobile-link text-primary hover:text-accent font-bold transition-colors duration-200">Contact</a>
+              <button id="switchLang" onclick="switchLanguage()" class="mobile-link text-accent font-bold">EN 💂</button>
             </nav>
           </div>
         </div>
@@ -129,7 +129,7 @@
               J'ai également eu l'occasion de participer à une LAN à Copenhague avec DizLown.
             </li>
             <li class="mb-3">
-              <span class="font-bold">Joueuse semi-pro en billard à bouchon <span class="font-light text-text-light">(oui, je sais, c'est rare, mais j'adore le billard)</span></span><br/>
+              <span class="font-bold">Joueuse semi-pro en billard à bouchon <span class="text-accent font-bold">(oui, je sais, c'est rare, mais j'adore le billard)</span></span><br/>
               Pendant 12 ans où j'ai joué dans l'équipe familiale dans des championnats contre d'autres équipes du Hainaut et du Brabant-Wallon.<br/>
               J'ai également joué lors de compétitions individuelles et en duo.
             </li>
@@ -146,31 +146,37 @@
         <div class="flex justify-center">
           <ul>
             <li class="mb-5">
-              <span class="font-bold text-xl text-primary">🌿 M'immerger dans la nature</span><br/>
+              <span class="font-bold text-xl text-primary">M'immerger dans la nature</span><br/>
               Je m'épanouis en plein air, surtout lorsque j'observe des insectes dans leur habitat naturel.<br/>
-              Rejoignez-moi dans mon voyage d'exploration - je partage mes découvertes sur <a class="text-primary" href="https://observations.be/users/936342/" target="_blank">Observation.org</a> et <a class="text-primary" href="https://www.inaturalist.org/people/ckxd" target="_blank">iNaturalist</a>.
+              Rejoignez-moi dans mon voyage d'exploration - je partage mes découvertes sur <a class="text-primary" href="https://observations.be/users/936342/" target="_blank" rel="noopener noreferrer" title="Mon profil sur Observation.org">Observation.org</a> et <a class="text-primary" href="https://www.inaturalist.org/people/ckxd" target="_blank" rel="noopener noreferrer" title="Mon profil sur iNaturalist">iNaturalist</a>.
             </li>
             <li class="mb-5">
-              <span class="font-bold text-xl text-primary">🎶 Musique : Ma bande-son en constante évolution</span><br/>
+              <span class="font-bold text-xl text-primary">Ma bande-son en constante évolution</span><br/>
               Je ne suis pas du genre à m'attacher à un groupe ou à un artiste en particulier, mais j'écoute la musique pour ce qu'elle me fait ressentir au moment présent.<br/>
               En ce moment, voici mes morceaux préférés, qui tournent en boucle :
               <div aria-hidden="true">
                 <div class="mt-2 grid grid-cols-1 min-[1072px]:grid-cols-2 xl:grid-cols-3 gap-8 sm:gap-10 md:gap-12 lg:gap-14 justify-items-center">  
-                  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1j21bKbHLoNaVWHZykBcDD?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="fullscreen" loading="lazy"></iframe>
-                  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2MgRsq3PLtGVqex5MkBlUD?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="fullscreen" loading="lazy"></iframe>
-                  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1HVYQj4liQb1QOygBfjZqV?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="fullscreen" loading="lazy"></iframe>
+                  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1j21bKbHLoNaVWHZykBcDD?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="fullscreen" loading="lazy" title="Écouter le morceau sur Spotify - Track 1"></iframe>
+                  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2MgRsq3PLtGVqex5MkBlUD?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="fullscreen" loading="lazy" title="Écouter le morceau sur Spotify - Track 2"></iframe>
+                  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1HVYQj4liQb1QOygBfjZqV?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="fullscreen" loading="lazy" title="Écouter le morceau sur Spotify - Track 3"></iframe>
                 </div>
               </div>
             </li>
             <li>
-              <span class="font-bold text-xl text-primary">🎨 Dessin et pastels à l'huile</span><br/>
+              <span class="font-bold text-xl text-primary">Dessin et pastels à l'huile</span><br/>
               Cela fait deux ans que j'ai commencé à suivre des cours de dessin hebdomadaires, et c'est maintenant mon moment de détente quotidien ! <br/>
-              Voici quelques-unes de mes œuvres préférées :
+              Voici quelques-unes de mes oeuvres préférées :
               <div aria-hidden="true">
                 <div class="mt-2 grid grid-cols-1 min-[1072px]:grid-cols-2 xl:grid-cols-3 gap-8 sm:gap-10 md:gap-12 lg:gap-14 justify-items-center">
-                  <a href="https://www.instagram.com/p/DGSTCO1AeQ6/" target="_blank"><img src="../../assets/img/debbydrawportrait.jpg" alt="Portrait Drawing" width="150"></a>
-                  <a href="https://www.instagram.com/p/C3vT6ndocgf/" target="_blank"><img src="../../assets/img/debbydrawinseparable.png" alt="Inseparable Drawing" width="195"></a>
-                  <a href="https://www.instagram.com/p/DDGrcvmIADF/" target="_blank"><img src="../../assets/img/debbydrawpain.png" alt="Pain Drawing" width="160"></a>
+                  <a href="https://www.instagram.com/p/DGSTCO1AeQ6/" target="_blank" rel="noopener noreferrer" title="Portrait réalisé au pastel à l'huile de Debby" aria-label="Voir le portrait réalisé au pastel à l'huile de Debby">
+                    <img src="../../assets/img/debbydrawportrait.jpg" alt="Portrait au pastel à l'huile de Debby" width="150">
+                  </a>
+                  <a href="https://www.instagram.com/p/C3vT6ndocgf/" target="_blank" rel="noopener noreferrer" title="Dessin représentant des oiseaux inseparables, peint avec des pastels à l'huile" aria-label="Voir le dessin d'inseparables réalisé avec des pastels à l'huile">
+                    <img src="../../assets/img/debbydrawinseparable.png" alt="Dessin d'inseparables au pastel à l'huile" width="195">
+                  </a>
+                  <a href="https://www.instagram.com/p/DDGrcvmIADF/" target="_blank" rel="noopener noreferrer" title="Dessin symbolisant la douleur, peint avec des pastels à l'huile" aria-label="Voir le dessin symbolisant la douleur réalisé avec des pastels à l'huile">
+                    <img src="../../assets/img/debbydrawpain.png" alt="Dessin représentant la douleur, peint avec des pastels à l'huile" width="160">
+                  </a>
                 </div>
               </div>
             </li>
@@ -364,7 +370,7 @@
                     <p class="text-start text-text-secondary mt-3 text-sm"></p>
                   </div>
 
-                  <a href="https://www.braine-le-chateau.be/" target="_blank" rel="noopener noreferrer external" title="Commune de Braine-le-Château (job étudiant, 2 semaines)" aria-label="Site de la Commune de Braine-le-Château où j'ai effectué un job étudiant pendant 2 semaines">
+                  <a href="https://www.braine-le-chateau.be/" target="_blank" rel="noopener noreferrer" aria-label="Site de la Commune de Braine-le-Château où j'ai effectué un job étudiant pendant 2 semaines">
                     <div class="timeline-logo">
                       <img src="../../assets/img/blc.png" alt="Logo de la Commune de Braine-le-Château où j'ai effectué un job étudiant durant 2 semaines." class="object-contain rounded-full">
                     </div>
@@ -386,7 +392,10 @@
                     <div class="flex items-center gap-2">
                       <i class="fa-solid fa-location-dot text-accent"></i>
                       <p class="text-text-light">
-                        <a href="https://www.comarkt.be/fr" target="_blank">CoMarché, Braine-l'Alleud</a>
+                        <a href="https://www.comarkt.be/fr" target="_blank" rel="noopener noreferrer" aria-label="Lien vers site de CoMarché (anciennement Supermarché Match), où j'ai travaillé 1 an." aria-hidden="true">
+                          CoMarché, Braine-l'Alleud
+                          <span class="sr-only">Aller vers le site web de CoMarché</span>
+                        </a>
                       </p>
                     </div>
 
@@ -403,9 +412,10 @@
                     </div>
                   </div>
 
-                  <a href="https://www.comarkt.be/fr" target="_blank" rel="noopener noreferrer external" title="Lien vers la société CoMarché (anciennement Supermarché Match), où j'ai travaillé 1 an." aria-label="Lien vers la société CoMarché (anciennement Supermarché Match), où j'ai travaillé 1 an.">
+                  <a href="https://www.comarkt.be/fr" target="_blank" rel="noopener noreferrer" aria-label="Lien vers la société CoMarché (anciennement Supermarché Match), où j'ai travaillé 1 an." aria-hidden="true">
+                    <span class="sr-only">Aller vers le site web de CoMarché</span>
                     <div class="timeline-logo">
-                      <img src="../../assets/img/cm.png" alt="Logo de la société CoMarché." class="object-contain rounded-full">
+                      <img src="../../assets/img/cm.png" alt="Logo de la société CoMarché." class="object-contain rounded-full" aria-hidden="true">
                     </div>
                   </a>
                 </div>
@@ -428,7 +438,7 @@
                     <p class="text-start text-text-secondary mt-3 text-sm"></p>
                   </div>
                   <div class="timeline-logo">
-                    <img src="../../assets/img/kpb.jpg" alt="💚" class="object-contain rounded-full">
+                    <img src="../../assets/img/kpb.jpg" alt="💚" class="object-contain rounded-full" aria-hidden="true">
                   </div>
                 </div>
               </div>
@@ -450,7 +460,7 @@
                     <p class="text-start text-text-secondary mt-3 text-sm">Serveur communautaire World of Warcraft</p>
                   </div>
                   <div class="timeline-logo">
-                    <img src="../../assets/img/wow.png" alt="💚" class="object-contain rounded-full">
+                    <img src="../../assets/img/wow.png" alt="💚" class="object-contain rounded-full" aria-hidden="true">
                   </div>
                 </div>
               </div>
@@ -472,7 +482,7 @@
                     <p class="text-start text-text-secondary mt-3 text-sm"></p>
                   </div>
                   <div class="timeline-logo">
-                    <img src="../../assets/img/appco.jpg" alt="💚" class="object-contain rounded-full">
+                    <img src="../../assets/img/appco.jpg" alt="💚" class="object-contain rounded-full" aria-hidden="true">
                   </div>
                 </div>
               </div>
@@ -494,7 +504,7 @@
                     <p class="text-start text-text-secondary mt-3 text-sm">Serveur communautaire Minecraft</p>
                   </div>
                   <div class="timeline-logo">
-                    <img src="../../assets/img/isolonice.png" alt="💚" class="object-contain rounded-full">
+                    <img src="../../assets/img/isolonice.png" alt="💚" class="object-contain rounded-full" aria-hidden="true">
                   </div>
                 </div>
               </div>
@@ -516,7 +526,7 @@
                     <p class="text-start text-text-secondary mt-3 text-sm">Serveur communautaire Minecraft</p>
                   </div>
                   <div class="timeline-logo">
-                    <img src="../../assets/img/maestrie.avif" alt="💚" class="object-contain rounded-full">
+                    <img src="../../assets/img/maestrie.avif" alt="💚" class="object-contain rounded-full" aria-hidden="true">
                   </div>
                 </div>
               </div>
@@ -538,7 +548,7 @@
                     <p class="text-start text-text-secondary mt-3 text-sm">A2</p>
                   </div>
                   <div class="timeline-logo">
-                    <img src="../../assets/img/forem.jpg" alt="💚" class="object-contain rounded-full">
+                    <img src="../../assets/img/forem.jpg" alt="💚" class="object-contain rounded-full" aria-hidden="true">
                   </div>
                 </div>
               </div>
@@ -560,7 +570,7 @@
                     <p class="text-start text-text-secondary mt-3 text-sm"></p>
                   </div>
                   <div class="timeline-logo">
-                    <img src="../../assets/img/aidvds.png" alt="💚" class="object-contain rounded-full">
+                    <img src="../../assets/img/aidvds.png" alt="💚" class="object-contain rounded-full" aria-hidden="true">
                   </div>
                 </div>
               </div>
@@ -582,7 +592,7 @@
                     <p class="text-start text-text-secondary mt-3 text-sm"></p>
                   </div>
                   <div class="timeline-logo">
-                    <img src="../../assets/img/restor.png" alt="💚" class="object-contain rounded-full">
+                    <img src="../../assets/img/restor.png" alt="💚" class="object-contain rounded-full" aria-hidden="true">
                   </div>
                 </div>
               </div>
@@ -604,7 +614,7 @@
                     <p class="text-start text-text-secondary mt-3 text-sm"></p>
                   </div>
                   <div class="timeline-logo">
-                    <img src="../../assets/img/cf.png" alt="💚" class="object-contain rounded-full">
+                    <img src="../../assets/img/cf.png" alt="💚" class="object-contain rounded-full" aria-hidden="true">
                   </div>
                 </div>
               </div>
@@ -626,7 +636,7 @@
                     <p class="text-start text-text-secondary mt-3 text-sm"></p>
                   </div>
                   <div class="timeline-logo">
-                    <img src="../../assets/img/gatynn.png" alt="💚" class="object-contain rounded-full">
+                    <img src="../../assets/img/gatynn.png" alt="💚" class="object-contain rounded-full" aria-hidden="true">
                   </div>
                 </div>
               </div>
@@ -648,7 +658,7 @@
                     <p class="text-start text-text-secondary mt-3 text-sm"></p>
                   </div>
                   <div class="timeline-logo">
-                    <img src="../../assets/img/belynn.png" alt="💚" class="object-contain rounded-full">
+                    <img src="../../assets/img/belynn.png" alt="💚" class="object-contain rounded-full" aria-hidden="true">
                   </div>
                 </div>
               </div>
@@ -674,9 +684,13 @@
         <p class="text-lg text-gray-700 mb-4">
           Vous avez une opportunité, un projet ou simplement envie de parler ? Alors écrivez-moi !
         </p>
-        <a href="mailto:gobelynn@email.com" class="inline-block bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary-dark transition duration-300 shadow">
-          Discutons !
-        </a>
+        <div class="max-w-2xl mx-auto text-center space-y-6">
+          <div class="flex flex-col justify-center items-center gap-4 pt-12">
+            <a href="mailto:gobelynn@gmail.com" class="contact-submit-btn" title="Envoyez-moi un email pour discuter de vos projets">
+              Discutons !
+            </a>
+          </div>
+        </div>
       </section>
       <!-- END Section Contact -->
     </main>
@@ -684,14 +698,33 @@
     <footer class="text-center text-sm text-gray-500 py-6">
       <!-- Social media -->
       <div class="flex justify-center items-center gap-24 pt-12">
-        <a href="https://www.linkedin.com/in/deborah-clerckx/" target="_blank" class="text-primary hover:text-accent transition-all duration-300">
-          <i class="fa-brands fa-linkedin-in text-2xl"></i>
+        <a href="https://www.linkedin.com/in/deborah-clerckx/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-primary hover:text-accent transition-all duration-300"
+          aria-label="Aller vers le compte LinkedIn de Deborah Clerckx"
+          title="Voir le profil LinkedIn de Deborah Clerckx">
+
+          <i class="fa-brands fa-linkedin-in text-2xl" aria-hidden="true"></i>
+          <span class="sr-only">Aller vers le compte LinkedIn de Deborah Clerckx</span>
         </a>
-        <a href="https://github.com/belynnn" target="_blank" class="text-primary hover:text-accent transition-all duration-300">
-          <i class="fa-brands fa-github text-2xl"></i>
+        <a href="https://github.com/belynnn"
+          target="_blank"
+          rel="noopener noreferrer" 
+          class="text-primary hover:text-accent transition-all duration-300"
+          aria-label="Aller vers le compte GitHub de Deborah Clerckx"
+          title="Voir le profil GitHub de Deborah Clerckx">
+
+          <i class="fa-brands fa-github text-2xl" aria-hidden="true"></i>
+          <span class="sr-only">Aller vers le compte GitHub de Deborah Clerckx</span>
         </a>
-        <a href="mailto:gobelynn@gmail.com" class="text-primary hover:text-accent transition-all duration-300">
-          <i class="fa-solid fa-at text-2xl"></i>
+        <a href="mailto:gobelynn@gmail.com"
+          class="text-primary hover:text-accent transition-all duration-300"
+          aria-label="Contacter Deborah Clerckx par mail"
+          title="Envoyer un email à Deborah Clerckx">
+
+          <i class="fa-solid fa-at text-2xl" aria-hidden="true"></i>
+          <span class="sr-only">Contacter Deborah Clerckx par mail</span>
         </a>
       </div>
       <!-- END Social media -->
